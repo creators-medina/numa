@@ -21,7 +21,7 @@ import {
   verticalListSortingStrategy,
   arrayMove,
 } from "@dnd-kit/sortable";
-import { createClient } from "@/lib/supabase/client";
+import { createClient, isSupabaseConfigured } from "@/lib/supabase/client";
 import type { CrmBoard, CrmPipelineColumn, CrmLead } from "@/types/crm";
 import LeadCard from "@/components/admin/LeadCard";
 import LeadDetailModal from "@/components/admin/LeadDetailModal";
@@ -60,8 +60,35 @@ function DroppableColumnBody({
   );
 }
 
-/* ─── Main board ──────────────────────────────────────────────── */
-export default function AdminBoard() {
+/* ─── Setup screen shown when env vars are missing ────────────── */
+function NotConfigured() {
+  return (
+    <div className="min-h-screen bg-[#F5F4F1] flex items-center justify-center p-8">
+      <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-10 max-w-lg w-full text-center">
+        <div className="w-12 h-12 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center mx-auto mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d97706" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+          </svg>
+        </div>
+        <h2 className="font-semibold text-gray-900 text-lg mb-2">Supabase not connected</h2>
+        <p className="text-sm text-gray-500 mb-6 leading-relaxed">
+          Add these two environment variables to your Vercel project, then redeploy:
+        </p>
+        <div className="bg-gray-50 rounded-xl border border-gray-200 p-4 text-left text-xs font-mono space-y-2 mb-6">
+          <p><span className="text-[#2C4A3E] font-semibold">NEXT_PUBLIC_SUPABASE_URL</span>=https://xxxx.supabase.co</p>
+          <p><span className="text-[#2C4A3E] font-semibold">NEXT_PUBLIC_SUPABASE_ANON_KEY</span>=eyJh...</p>
+        </div>
+        <p className="text-xs text-gray-400">
+          Find these in your Supabase dashboard → Settings → API. Also make sure you&apos;ve run{" "}
+          <code className="bg-gray-100 px-1 rounded">supabase-schema.sql</code> in the SQL editor.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+/* ─── Main board (inner — only rendered when Supabase is configured) ─ */
+function AdminBoardInner() {
   const supabase = createClient();
   const [board, setBoard] = useState<CrmBoard | null>(null);
   const [columns, setColumns] = useState<CrmPipelineColumn[]>([]);
@@ -670,4 +697,10 @@ export default function AdminBoard() {
       )}
     </div>
   );
+}
+
+/* ─── Public export — guards Supabase config before rendering board ─ */
+export default function AdminBoard() {
+  if (!isSupabaseConfigured()) return <NotConfigured />;
+  return <AdminBoardInner />;
 }
