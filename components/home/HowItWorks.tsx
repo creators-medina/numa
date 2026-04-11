@@ -1,3 +1,4 @@
+import Link from "next/link";
 const steps = [
   {
     number: "01",
@@ -16,8 +17,7 @@ const steps = [
   },
 ];
 
-const INQUIRY_URL =
-  "https://docs.google.com/forms/d/e/1FAIpQLScNXK88vFLqYU_TMDPOfF6nPZ1ruoseO1c25lojfa3JG-V-Bg/viewform?utm_source=ig&utm_medium=social&utm_content=link_in_bio";
+const INQUIRY_URL = "/inquiry";
 
 export default function HowItWorks() {
   return (
@@ -60,14 +60,11 @@ export default function HowItWorks() {
         </div>
 
         <div className="text-center mt-16">
-          <a
-            href={INQUIRY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link href={INQUIRY_URL}
             className="inline-flex items-center px-8 py-4 bg-forest text-cream text-sm font-medium rounded-full hover:bg-forest-light transition-all duration-300 tracking-wide shadow-md hover:shadow-lg"
           >
             Start Your Inquiry
-          </a>
+          </Link>
         </div>
       </div>
     </section>

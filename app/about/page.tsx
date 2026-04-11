@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -6,8 +7,7 @@ export const metadata: Metadata = {
     "Learn the story behind NÜMA Açaí — a boutique event catering brand built on a love for beautiful food, warm hospitality, and memorable gatherings.",
 };
 
-const INQUIRY_URL =
-  "https://docs.google.com/forms/d/e/1FAIpQLScNXK88vFLqYU_TMDPOfF6nPZ1ruoseO1c25lojfa3JG-V-Bg/viewform?utm_source=ig&utm_medium=social&utm_content=link_in_bio";
+const INQUIRY_URL = "/inquiry";
 
 const values = [
   {
@@ -152,14 +152,11 @@ export default function AboutPage() {
             We&apos;d love to learn about your event and build something beautiful
             around it.
           </p>
-          <a
-            href={INQUIRY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link href={INQUIRY_URL}
             className="inline-flex items-center px-8 py-4 bg-cream text-forest text-sm font-semibold rounded-full hover:bg-tan-light transition-all duration-300 tracking-wide"
           >
             Inquire to Book
-          </a>
+          </Link>
         </div>
       </section>
     </>

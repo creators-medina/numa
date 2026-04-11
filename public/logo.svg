@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" fill="none">
+  <!-- Left botanical branch -->
+  <g opacity="0.85">
+    <path d="M72 102 Q58 88 48 94 Q56 84 68 90 Q60 78 52 82 Q62 72 72 82 Q68 68 60 70 Q70 62 78 74" stroke="#8FAF97" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+    <ellipse cx="50" cy="93" rx="7" ry="4" transform="rotate(-30 50 93)" fill="#8FAF97" opacity="0.7"/>
+    <ellipse cx="58" cy="83" rx="6" ry="3.5" transform="rotate(-45 58 83)" fill="#8FAF97" opacity="0.7"/>
+    <ellipse cx="66" cy="74" rx="6" ry="3" transform="rotate(-55 66 74)" fill="#8FAF97" opacity="0.6"/>
+    <!-- Berries -->
+    <circle cx="46" cy="98" r="2.5" fill="#7C3D4E" opacity="0.8"/>
+    <circle cx="41" cy="94" r="2" fill="#7C3D4E" opacity="0.7"/>
+    <circle cx="44" cy="90" r="2" fill="#7C3D4E" opacity="0.75"/>
+  </g>
+
+  <!-- Right botanical branch -->
+  <g opacity="0.85" transform="scale(-1,1) translate(-320,0)">
+    <path d="M72 102 Q58 88 48 94 Q56 84 68 90 Q60 78 52 82 Q62 72 72 82 Q68 68 60 70 Q70 62 78 74" stroke="#8FAF97" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+    <ellipse cx="50" cy="93" rx="7" ry="4" transform="rotate(-30 50 93)" fill="#8FAF97" opacity="0.7"/>
+    <ellipse cx="58" cy="83" rx="6" ry="3.5" transform="rotate(-45 58 83)" fill="#8FAF97" opacity="0.7"/>
+    <ellipse cx="66" cy="74" rx="6" ry="3" transform="rotate(-55 66 74)" fill="#8FAF97" opacity="0.6"/>
+    <circle cx="46" cy="98" r="2.5" fill="#7C3D4E" opacity="0.8"/>
+    <circle cx="41" cy="94" r="2" fill="#7C3D4E" opacity="0.7"/>
+    <circle cx="44" cy="90" r="2" fill="#7C3D4E" opacity="0.75"/>
+  </g>
+
+  <!-- Gorilla silhouette -->
+  <g transform="translate(160,0)">
+    <!-- Body -->
+    <ellipse cx="0" cy="75" rx="26" ry="30" fill="#2C4A3E"/>
+    <!-- Head -->
+    <ellipse cx="0" cy="44" rx="20" ry="18" fill="#2C4A3E"/>
+    <!-- Brow ridge -->
+    <ellipse cx="0" cy="37" rx="18" ry="7" fill="#1B302A"/>
+    <!-- Face -->
+    <ellipse cx="0" cy="47" rx="14" ry="12" fill="#3D6355" opacity="0.5"/>
+    <!-- Eyes -->
+    <circle cx="-6" cy="43" r="3" fill="#1B302A"/>
+    <circle cx="6" cy="43" r="3" fill="#1B302A"/>
+    <circle cx="-5" cy="42.5" r="1.2" fill="#FAF7F2" opacity="0.6"/>
+    <circle cx="7" cy="42.5" r="1.2" fill="#FAF7F2" opacity="0.6"/>
+    <!-- Nose -->
+    <ellipse cx="0" cy="50" rx="5" ry="3.5" fill="#1B302A"/>
+    <circle cx="-2.5" cy="50" r="1.8" fill="#2C4A3E"/>
+    <circle cx="2.5" cy="50" r="1.8" fill="#2C4A3E"/>
+    <!-- Mouth -->
+    <path d="M -5 55 Q 0 58 5 55" stroke="#1B302A" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <!-- Ears -->
+    <ellipse cx="-19" cy="44" rx="5" ry="6" fill="#2C4A3E"/>
+    <ellipse cx="19" cy="44" rx="5" ry="6" fill="#2C4A3E"/>
+    <!-- Arms -->
+    <path d="M -26 70 Q -38 85 -32 98" stroke="#2C4A3E" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <path d="M 26 70 Q 38 85 32 98" stroke="#2C4A3E" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <!-- Hands -->
+    <ellipse cx="-30" cy="99" rx="7" ry="5" fill="#2C4A3E"/>
+    <ellipse cx="30" cy="99" rx="7" ry="5" fill="#2C4A3E"/>
+    <!-- Legs -->
+    <path d="M -12 102 Q -14 112 -10 118" stroke="#2C4A3E" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <path d="M 12 102 Q 14 112 10 118" stroke="#2C4A3E" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <!-- Feet -->
+    <ellipse cx="-9" cy="119" rx="10" ry="5" fill="#2C4A3E"/>
+    <ellipse cx="9" cy="119" rx="10" ry="5" fill="#2C4A3E"/>
+    <!-- Chest patch -->
+    <ellipse cx="0" cy="78" rx="14" ry="16" fill="#3D6355" opacity="0.3"/>
+    <!-- Texture dots -->
+    <circle cx="-8" cy="60" r="1" fill="#1B302A" opacity="0.4"/>
+    <circle cx="8" cy="58" r="0.8" fill="#1B302A" opacity="0.4"/>
+    <circle cx="-4" cy="72" r="0.8" fill="#1B302A" opacity="0.3"/>
+    <circle cx="10" cy="75" r="1" fill="#1B302A" opacity="0.3"/>
+    <circle cx="-12" cy="68" r="0.8" fill="#1B302A" opacity="0.3"/>
+  </g>
+
+  <!-- NÜMA text -->
+  <text x="160" y="152" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="38" font-weight="600" letter-spacing="8" fill="#7C3D4E">NÜMA</text>
+
+  <!-- Bottom botanical accent -->
+  <g transform="translate(160, 165)">
+    <path d="M-30 0 Q-15 -6 0 -2 Q15 -6 30 0" stroke="#C9A87C" stroke-width="1" stroke-linecap="round" fill="none"/>
+    <ellipse cx="-18" cy="-3" rx="5" ry="2.5" transform="rotate(15 -18 -3)" fill="#8FAF97" opacity="0.6"/>
+    <ellipse cx="18" cy="-3" rx="5" ry="2.5" transform="rotate(-15 18 -3)" fill="#8FAF97" opacity="0.6"/>
+    <circle cx="0" cy="-4" r="2" fill="#C9A87C" opacity="0.7"/>
+    <circle cx="-6" cy="-1" r="1.5" fill="#C9A87C" opacity="0.6"/>
+    <circle cx="6" cy="-1" r="1.5" fill="#C9A87C" opacity="0.6"/>
+  </g>
+</svg>

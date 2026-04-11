@@ -1,5 +1,5 @@
-const INQUIRY_URL =
-  "https://docs.google.com/forms/d/e/1FAIpQLScNXK88vFLqYU_TMDPOfF6nPZ1ruoseO1c25lojfa3JG-V-Bg/viewform?utm_source=ig&utm_medium=social&utm_content=link_in_bio";
+import Link from "next/link";
+const INQUIRY_URL = "/inquiry";
 
 export default function CTABand() {
   return (
@@ -28,14 +28,11 @@ export default function CTABand() {
           let us create something beautiful together.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a
-            href={INQUIRY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link href={INQUIRY_URL}
             className="inline-flex items-center px-8 py-4 bg-cream text-forest text-sm font-semibold rounded-full hover:bg-tan-light transition-all duration-300 tracking-wide shadow-lg"
           >
             Inquire to Book
-          </a>
+          </Link>
           <a
             href="https://www.instagram.com/numa.acai/"
             target="_blank"

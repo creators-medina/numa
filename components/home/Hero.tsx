@@ -1,7 +1,6 @@
 import Link from "next/link";
 
-const INQUIRY_URL =
-  "https://docs.google.com/forms/d/e/1FAIpQLScNXK88vFLqYU_TMDPOfF6nPZ1ruoseO1c25lojfa3JG-V-Bg/viewform?utm_source=ig&utm_medium=social&utm_content=link_in_bio";
+const INQUIRY_URL = "/inquiry";
 
 export default function Hero() {
   return (
@@ -53,14 +52,11 @@ export default function Hero() {
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a
-            href={INQUIRY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link href={INQUIRY_URL}
             className="inline-flex items-center px-8 py-4 bg-forest text-cream text-sm font-medium rounded-full hover:bg-forest-light transition-all duration-300 tracking-wide shadow-lg hover:shadow-xl"
           >
             Inquire to Book
-          </a>
+          </Link>
           <Link
             href="/gallery"
             className="inline-flex items-center px-8 py-4 border border-forest/30 text-forest text-sm font-medium rounded-full hover:bg-forest/5 transition-all duration-300 tracking-wide"

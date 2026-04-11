@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -6,8 +7,7 @@ export const metadata: Metadata = {
     "Hear from hosts and guests who have experienced NÜMA Açaí at their weddings, showers, corporate events, and private celebrations.",
 };
 
-const INQUIRY_URL =
-  "https://docs.google.com/forms/d/e/1FAIpQLScNXK88vFLqYU_TMDPOfF6nPZ1ruoseO1c25lojfa3JG-V-Bg/viewform?utm_source=ig&utm_medium=social&utm_content=link_in_bio";
+const INQUIRY_URL = "/inquiry";
 
 const testimonials = [
   {
@@ -119,14 +119,11 @@ export default function TestimonialsPage() {
             Join the growing list of gatherings where NÜMA turned a great event
             into an unforgettable one.
           </p>
-          <a
-            href={INQUIRY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link href={INQUIRY_URL}
             className="inline-flex items-center px-8 py-4 bg-cream text-forest text-sm font-semibold rounded-full hover:bg-tan-light transition-all duration-300 tracking-wide"
           >
             Inquire to Book
-          </a>
+          </Link>
         </div>
       </section>
     </>
