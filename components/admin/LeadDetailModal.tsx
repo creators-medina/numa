@@ -106,14 +106,14 @@ export default function LeadDetailModal({ lead, columns, onClose, onUpdate }: Pr
   if (!localLead) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       {/* Backdrop */}
-      <div className="flex-1 bg-black/30 backdrop-blur-sm" onClick={onClose} />
+      <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" onClick={onClose} />
 
-      {/* Panel */}
-      <div className="w-full max-w-2xl bg-white shadow-2xl flex flex-col overflow-hidden">
+      {/* Card */}
+      <div className="relative w-full max-w-2xl max-h-[90vh] bg-white shadow-2xl rounded-2xl flex flex-col overflow-hidden">
         {/* Header */}
-        <div className="flex items-start justify-between p-6 border-b border-gray-100">
+        <div className="flex items-start justify-between p-6 border-b border-gray-100 shrink-0">
           <div className="flex-1 min-w-0">
             <input
               className="font-serif text-2xl font-bold text-gray-900 w-full bg-transparent border-none outline-none focus:ring-0 p-0"
@@ -291,7 +291,7 @@ export default function LeadDetailModal({ lead, columns, onClose, onUpdate }: Pr
         </div>
 
         {/* Footer */}
-        <div className="p-4 border-t border-gray-100 bg-gray-50 flex items-center justify-between text-xs text-gray-400">
+        <div className="p-4 border-t border-gray-100 bg-gray-50 flex items-center justify-between text-xs text-gray-400 shrink-0">
           <span>Created {formatDate(localLead.created_at)}</span>
           <span>Updated {formatDate(localLead.updated_at)}</span>
         </div>
