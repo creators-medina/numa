@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 };
 
 const galleryItems = [
-  { label: "Bowl Presentation", size: "large", bg: "from-[#C9A87C]/40 to-[#2C4A3E]/30" },
+  { label: "Bowl Presentation", size: "large", bg: "9R5A0279-2.jpg" },
   { label: "Event Setup", size: "medium", bg: "from-[#2C4A3E]/25 to-[#8FAF97]/25" },
   { label: "Stall Signage", size: "medium", bg: "from-[#7C3D4E]/25 to-[#E2CBA8]/30" },
   { label: "Guest Moment", size: "small", bg: "from-[#E2CBA8]/40 to-[#C9A87C]/30" },
