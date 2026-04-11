@@ -400,7 +400,7 @@ function AdminBoardInner() {
         <div className="px-6 py-3 flex items-center gap-4">
           {/* Logo */}
           <div className="flex items-center gap-3 shrink-0">
-            <Image src="/logo.png" alt="NÜMA" width={32} height={32} className="h-8 w-auto" />
+            <Image src="/logo.svg" alt="NÜMA" width={32} height={32} className="h-8 w-auto" />
             <div>
               <p className="font-semibold text-gray-900 text-sm leading-none">
                 NÜMA Admin

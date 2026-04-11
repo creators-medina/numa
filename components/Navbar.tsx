@@ -33,7 +33,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 shrink-0">
             <Image
-              src="/logo.png"
+              src="/logo.svg"
               alt="NÜMA Açaí"
               width={48}
               height={27}

@@ -18,7 +18,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <Image src="/logo.png" alt="NÜMA Açaí" width={48} height={27} className="h-10 w-auto brightness-0 invert opacity-80" />
+              <Image src="/logo.svg" alt="NÜMA Açaí" width={48} height={27} className="h-10 w-auto brightness-0 invert opacity-80" />
               <p className="font-serif text-xl font-semibold tracking-widest text-cream uppercase">
                 NÜMA Açaí
               </p>
