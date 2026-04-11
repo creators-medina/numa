@@ -37,7 +37,7 @@ export default function Navbar() {
               alt="NÜMA Açaí"
               width={48}
               height={27}
-              className="h-10 w-auto"
+              className="h-7 w-auto"
               priority
             />
             <span className="hidden sm:block font-serif text-sm font-semibold tracking-[0.18em] text-forest uppercase">
