@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -78,31 +79,26 @@ export default function AboutPage() {
               </p>
             </div>
 
-            {/* Founder visual placeholder */}
+            {/* Photo */}
             <div className="relative">
-              <div
-                className="w-full aspect-[4/5] rounded-3xl"
-                style={{
-                  background:
-                    "linear-gradient(135deg, #C9A87C30 0%, #2C4A3E25 50%, #7C3D4E20 100%)",
-                }}
-              >
-                <div
-                  className="absolute inset-0 rounded-3xl opacity-20"
-                  style={{
-                    backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232C4A3E' fill-opacity='0.2'%3E%3Ccircle cx='20' cy='20' r='1.5'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-                  }}
+              <div className="w-full aspect-[4/5] rounded-3xl overflow-hidden">
+                <Image
+                  src="/9R5A0251.jpg"
+                  alt="Garnishing a NÜMA açaí bowl"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
-              <div className="absolute -bottom-6 -left-6 w-36 h-36 rounded-2xl border-4 border-cream"
-                style={{
-                  background:
-                    "linear-gradient(135deg, #2C4A3E30 0%, #C9A87C30 100%)",
-                }}
-              />
-              <p className="absolute bottom-4 right-4 text-xs text-warm-gray-light italic">
-                Founder photo coming soon
-              </p>
+              <div className="absolute -bottom-6 -left-6 w-36 h-36 rounded-2xl overflow-hidden border-4 border-cream">
+                <Image
+                  src="/9R5A0184.jpg"
+                  alt="Dragon fruit in ceramic bowl"
+                  fill
+                  sizes="144px"
+                  className="object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>

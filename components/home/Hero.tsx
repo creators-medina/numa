@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const INQUIRY_URL = "/inquiry";
 
@@ -51,7 +52,7 @@ export default function Hero() {
         </p>
 
         {/* CTAs */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
           <Link href={INQUIRY_URL}
             className="inline-flex items-center px-8 py-4 bg-forest text-cream text-sm font-medium rounded-full hover:bg-forest-light transition-all duration-300 tracking-wide shadow-lg hover:shadow-xl"
           >
@@ -65,8 +66,41 @@ export default function Hero() {
           </Link>
         </div>
 
+        {/* Photo strip */}
+        <div className="flex items-end justify-center gap-3 max-w-2xl mx-auto">
+          <div className="relative w-[30%] aspect-[3/4] rounded-2xl overflow-hidden shadow-xl">
+            <Image
+              src="/9R5A0262-2.jpg"
+              alt="Açaí bowl in tropical leaves"
+              fill
+              sizes="200px"
+              className="object-cover"
+              priority
+            />
+          </div>
+          <div className="relative w-[38%] aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl -translate-y-4">
+            <Image
+              src="/main.jpg"
+              alt="Açaí bowl with fresh fruit"
+              fill
+              sizes="260px"
+              className="object-cover"
+              priority
+            />
+          </div>
+          <div className="relative w-[28%] aspect-[3/4] rounded-2xl overflow-hidden shadow-xl">
+            <Image
+              src="/9R5A0141.jpg"
+              alt="Fresh topping ingredients"
+              fill
+              sizes="180px"
+              className="object-cover"
+            />
+          </div>
+        </div>
+
         {/* Scroll nudge */}
-        <div className="mt-20 flex flex-col items-center gap-2 animate-bounce opacity-40">
+        <div className="mt-14 flex flex-col items-center gap-2 animate-bounce opacity-40">
           <div className="w-px h-10 bg-forest/40" />
           <svg
             xmlns="http://www.w3.org/2000/svg"

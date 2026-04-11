@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Gallery",
@@ -7,24 +8,24 @@ export const metadata: Metadata = {
 };
 
 const galleryItems = [
-  { label: "Bowl Presentation", size: "large", bg: "9R5A0279-2.jpg" },
-  { label: "Event Setup", size: "medium", bg: "from-[#2C4A3E]/25 to-[#8FAF97]/25" },
-  { label: "Stall Signage", size: "medium", bg: "from-[#7C3D4E]/25 to-[#E2CBA8]/30" },
-  { label: "Guest Moment", size: "small", bg: "from-[#E2CBA8]/40 to-[#C9A87C]/30" },
-  { label: "Topping Bar", size: "small", bg: "from-[#8FAF97]/25 to-[#2C4A3E]/20" },
-  { label: "Wedding Setup", size: "large", bg: "from-[#7C3D4E]/30 to-[#C9A87C]/25" },
-  { label: "Bowl Close-Up", size: "medium", bg: "from-[#2C4A3E]/30 to-[#7C3D4E]/20" },
-  { label: "Brand Activation", size: "small", bg: "from-[#C9A87C]/30 to-[#8FAF97]/20" },
-  { label: "Corporate Event", size: "small", bg: "from-[#8FAF97]/30 to-[#E2CBA8]/30" },
-  { label: "Bridal Shower", size: "medium", bg: "from-[#E2CBA8]/35 to-[#7C3D4E]/20" },
-  { label: "Detail Shot", size: "small", bg: "from-[#2C4A3E]/20 to-[#C9A87C]/30" },
-  { label: "Atmosphere", size: "small", bg: "from-[#7C3D4E]/20 to-[#2C4A3E]/25" },
+  { src: "/9R5A0262-2.jpg",  alt: "Açaí bowl nestled in tropical leaves",            size: "large"  },
+  { src: "/9R5A0251.jpg",    alt: "Hand garnishing a fresh açaí bowl",               size: "medium" },
+  { src: "/9R5A0141.jpg",    alt: "Premium topping ingredients spread",              size: "medium" },
+  { src: "/9R5A0061.jpg",    alt: "Overhead açaí cup with blueberries and banana",   size: "small"  },
+  { src: "/9R5A0100-2.jpg",  alt: "Açaí base close-up",                             size: "small"  },
+  { src: "/main.jpg",        alt: "Açaí bowl with strawberries and blueberries",     size: "large"  },
+  { src: "/9R5A0269.jpg",    alt: "Açaí bowl styled on grass",                      size: "medium" },
+  { src: "/9R5A0184.jpg",    alt: "Dragon fruit slices in a ceramic bowl",           size: "small"  },
+  { src: "/9R5A0166.jpg",    alt: "Fresh blueberries close-up",                     size: "small"  },
+  { src: "/9R5A0280.jpg",    alt: "Açaí bowl with dragon fruit on stone",            size: "medium" },
+  { src: "/9R5A0072.jpg",    alt: "Premium toppings in ceramic bowls",               size: "small"  },
+  { src: "/9R5A9970.jpg",    alt: "Toppings arranged on a wooden serving board",     size: "small"  },
 ];
 
 const sizeMap: Record<string, string> = {
-  large: "col-span-2 row-span-2 min-h-[280px]",
-  medium: "col-span-1 row-span-2 min-h-[200px]",
-  small: "col-span-1 row-span-1 min-h-[140px]",
+  large:  "col-span-2 row-span-2",
+  medium: "col-span-1 row-span-2",
+  small:  "col-span-1 row-span-1",
 };
 
 export default function GalleryPage() {
@@ -56,39 +57,18 @@ export default function GalleryPage() {
             {galleryItems.map((item, i) => (
               <div
                 key={i}
-                className={`${sizeMap[item.size]} rounded-2xl bg-gradient-to-br ${item.bg} flex items-end p-4 relative overflow-hidden group cursor-pointer`}
+                className={`${sizeMap[item.size]} relative rounded-2xl overflow-hidden group cursor-pointer`}
               >
-                {/* Subtle texture */}
-                <div
-                  className="absolute inset-0 opacity-20"
-                  style={{
-                    backgroundImage: `url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%232C4A3E' fill-opacity='0.15' fill-rule='evenodd'%3E%3Ccircle cx='16' cy='16' r='1'/%3E%3C/g%3E%3C/svg%3E")`,
-                  }}
+                <Image
+                  src={item.src}
+                  alt={item.alt}
+                  fill
+                  sizes="(max-width: 640px) 50vw, 25vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                {/* Hover label */}
-                <span className="relative text-xs font-medium text-charcoal/40 group-hover:text-charcoal/70 tracking-wide transition-colors">
-                  {item.label}
-                </span>
+                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300" />
               </div>
             ))}
-          </div>
-
-          <div className="mt-10 p-6 rounded-2xl bg-cream-dark/50 border border-cream-dark text-center">
-            <p className="text-sm text-warm-gray">
-              <span className="font-medium text-forest">Real photography coming soon.</span>{" "}
-              These placeholders represent the types of shots you&apos;ll find here —
-              bowl close-ups, stall setups, event atmospheres, and guest moments.
-              Follow{" "}
-              <a
-                href="https://www.instagram.com/numa.acai/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-forest underline underline-offset-2 hover:text-forest-light transition-colors"
-              >
-                @numa.acai
-              </a>{" "}
-              on Instagram to see the real thing.
-            </p>
           </div>
         </div>
       </section>
