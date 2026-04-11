@@ -70,7 +70,7 @@ export default function Hero() {
         <div className="flex items-end justify-center gap-3 max-w-2xl mx-auto">
           <div className="relative w-[30%] aspect-[3/4] rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="/9R5A0262-2.jpg"
+              src="/9R5A0251.jpg"
               alt="Açaí bowl in tropical leaves"
               fill
               sizes="200px"
