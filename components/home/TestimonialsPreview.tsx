@@ -24,17 +24,22 @@ const testimonials = [
 export default function TestimonialsPreview() {
   return (
     <section
-      className="py-24"
-      style={{ background: "linear-gradient(180deg, #FAF7F2 0%, #EEE8E0 100%)" }}
+      className="py-24 relative overflow-hidden"
+      style={{ background: "linear-gradient(180deg, #F1F0EB 0%, #DDE5EE 100%)" }}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-10">
+      <div
+        className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[80%] h-2/3 pointer-events-none"
+        style={{ background: "radial-gradient(ellipse at center bottom, #9AB1C835 0%, transparent 65%)" }}
+      />
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="text-xs font-semibold tracking-[0.25em] uppercase text-tan mb-4">
+          <p className="text-[11px] font-medium tracking-[0.32em] uppercase text-sky-dark mb-4">
             Kind Words
           </p>
-          <h2 className="font-serif text-4xl lg:text-5xl font-semibold text-forest">
-            What Guests Are Saying
+          <h2 className="text-4xl lg:text-5xl font-extralight text-aubergine tracking-tight leading-tight">
+            What guests are{" "}
+            <span className="font-script text-coral text-5xl lg:text-6xl">saying</span>
           </h2>
         </div>
 
@@ -43,17 +48,17 @@ export default function TestimonialsPreview() {
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className="bg-cream rounded-2xl p-8 flex flex-col gap-6 border border-cream-dark hover:border-tan-light hover:shadow-md transition-all duration-300"
+              className="bg-shell rounded-2xl p-8 flex flex-col gap-6 border border-sand hover:border-sky hover:shadow-md transition-all duration-300"
             >
-              <div className="text-tan text-2xl font-serif leading-none">&ldquo;</div>
-              <p className="text-charcoal/75 text-sm leading-relaxed italic flex-1">
+              <div className="font-script text-coral text-5xl leading-none">&ldquo;</div>
+              <p className="text-charcoal/75 text-sm leading-relaxed italic flex-1 font-light">
                 {t.quote}
               </p>
-              <div className="border-t border-cream-dark pt-5">
-                <p className="font-serif text-base font-semibold text-forest">
+              <div className="border-t border-sand pt-5">
+                <p className="text-base font-light text-aubergine tracking-tight">
                   {t.author}
                 </p>
-                <p className="text-xs text-warm-gray-light tracking-wide mt-1">
+                <p className="text-[11px] uppercase text-sky-dark tracking-[0.2em] mt-1.5 font-medium">
                   {t.event}
                 </p>
               </div>
@@ -64,7 +69,7 @@ export default function TestimonialsPreview() {
         <div className="text-center mt-12">
           <Link
             href="/testimonials"
-            className="inline-flex items-center gap-2 text-sm font-medium text-forest hover:text-forest-light transition-colors tracking-wide"
+            className="inline-flex items-center gap-2 text-[11px] font-medium uppercase text-aubergine hover:text-coral transition-colors tracking-[0.2em]"
           >
             Read More Stories
             <svg

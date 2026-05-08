@@ -28,19 +28,24 @@ const pillars = [
 export default function TheExperience() {
   return (
     <section
-      className="py-24"
-      style={{ background: "linear-gradient(180deg, #F0EAE0 0%, #FAF7F2 100%)" }}
+      className="py-24 relative overflow-hidden"
+      style={{ background: "linear-gradient(180deg, #DDE5EE 0%, #F1F0EB 60%, #EFE5D4 100%)" }}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-10">
+      <div
+        className="absolute top-0 right-0 w-1/2 h-2/3 pointer-events-none"
+        style={{ background: "radial-gradient(ellipse at 80% 20%, #9AB1C835 0%, transparent 60%)" }}
+      />
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
         {/* Header */}
         <div className="max-w-2xl mb-16">
-          <p className="text-xs font-semibold tracking-[0.25em] uppercase text-tan mb-4">
+          <p className="text-[11px] font-medium tracking-[0.32em] uppercase text-sky-dark mb-4">
             What Sets Us Apart
           </p>
-          <h2 className="font-serif text-4xl lg:text-5xl font-semibold text-forest leading-tight">
-            The NÜMA Experience
+          <h2 className="text-4xl lg:text-5xl font-extralight text-aubergine leading-[1.05] tracking-tight">
+            The nüma{" "}
+            <span className="font-script text-coral text-5xl lg:text-6xl">experience</span>
           </h2>
-          <p className="mt-5 text-warm-gray text-lg leading-relaxed">
+          <p className="mt-6 text-warm-gray text-base leading-relaxed font-light">
             Every detail — from the first bowl to the final spoonful — is crafted
             to feel as special as the event itself.
           </p>
@@ -51,13 +56,13 @@ export default function TheExperience() {
           {pillars.map((pillar, i) => (
             <div
               key={i}
-              className="p-8 rounded-2xl bg-cream border border-cream-dark hover:border-tan-light hover:shadow-md transition-all duration-300"
+              className="p-8 rounded-2xl bg-shell border border-sand hover:border-sky hover:shadow-md transition-all duration-300"
             >
-              <div className="w-8 h-0.5 bg-tan mb-6" />
-              <h3 className="font-serif text-xl font-semibold text-forest mb-3">
+              <div className="w-8 h-0.5 bg-coral mb-6" />
+              <h3 className="text-xl font-light text-aubergine mb-3 tracking-tight">
                 {pillar.title}
               </h3>
-              <p className="text-warm-gray text-sm leading-relaxed">
+              <p className="text-warm-gray text-sm leading-relaxed font-light">
                 {pillar.body}
               </p>
             </div>

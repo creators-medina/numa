@@ -76,7 +76,7 @@ export default function LeadCard({ lead, onClick }: LeadCardProps) {
         {lead.service_type && (
           <span
             className="text-white text-[10px] font-medium px-2 py-0.5 rounded-full"
-            style={{ backgroundColor: "#2C4A3E" }}
+            style={{ backgroundColor: "#361D29" }}
           >
             {lead.service_type}
           </span>
@@ -109,7 +109,7 @@ export default function LeadCard({ lead, onClick }: LeadCardProps) {
 
       {/* Quote amount */}
       {lead.quote_amount != null && (
-        <p className="text-xs font-semibold mb-1" style={{ color: "#2C4A3E" }}>
+        <p className="text-xs font-semibold mb-1" style={{ color: "#361D29" }}>
           ${lead.quote_amount.toLocaleString()}
         </p>
       )}
@@ -121,7 +121,7 @@ export default function LeadCard({ lead, onClick }: LeadCardProps) {
             <span
               key={tag}
               className="text-[10px] px-2 py-0.5 rounded-full"
-              style={{ backgroundColor: "#FAF7F2", color: "#6B6560" }}
+              style={{ backgroundColor: "#F1F0EB", color: "#8C8F8E" }}
             >
               {tag}
             </span>

@@ -14,17 +14,22 @@ export default function ContactPage() {
     <>
       {/* Hero */}
       <section
-        className="pt-36 pb-16"
-        style={{ background: "linear-gradient(160deg, #F0EAE0 0%, #FAF7F2 100%)" }}
+        className="pt-36 pb-16 relative overflow-hidden"
+        style={{ background: "linear-gradient(160deg, #DDE5EE 0%, #F1F0EB 60%, #EFE5D4 100%)" }}
       >
-        <div className="max-w-4xl mx-auto px-6 lg:px-10 text-center">
-          <p className="text-xs font-semibold tracking-[0.25em] uppercase text-tan mb-5">
+        <div
+          className="absolute -top-1/4 -right-1/4 w-[70%] h-[140%] pointer-events-none"
+          style={{ background: "radial-gradient(ellipse at center, #9AB1C840 0%, transparent 60%)" }}
+        />
+        <div className="relative max-w-4xl mx-auto px-6 lg:px-10 text-center">
+          <p className="text-[11px] font-medium tracking-[0.32em] uppercase text-sky-dark mb-6">
             Say Hello
           </p>
-          <h1 className="font-serif text-5xl lg:text-6xl font-semibold text-forest leading-tight mb-5">
-            We&apos;d Love to Hear from You
+          <h1 className="text-5xl lg:text-6xl font-extralight text-aubergine leading-[1.05] mb-5 tracking-tight">
+            We&apos;d love to{" "}
+            <span className="font-script text-coral text-6xl lg:text-7xl">hear from you</span>
           </h1>
-          <p className="text-lg text-warm-gray leading-relaxed max-w-xl mx-auto">
+          <p className="text-base text-warm-gray leading-relaxed max-w-xl mx-auto font-light">
             Whether you have a question, want to explore booking, or just want to
             say hi — we&apos;re always happy to connect.
           </p>
@@ -32,17 +37,21 @@ export default function ContactPage() {
       </section>
 
       {/* Contact options */}
-      <section className="py-20 bg-cream">
+      <section className="py-24 bg-shell">
         <div className="max-w-4xl mx-auto px-6 lg:px-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Inquiry CTA */}
             <div
-              className="rounded-3xl p-10 flex flex-col gap-6"
+              className="rounded-3xl p-10 flex flex-col gap-6 relative overflow-hidden"
               style={{
-                background: "linear-gradient(145deg, #2C4A3E 0%, #1B302A 100%)",
+                background: "linear-gradient(145deg, #361D29 0%, #1F1018 100%)",
               }}
             >
-              <div className="w-12 h-12 rounded-full bg-cream/10 flex items-center justify-center">
+              <div
+                className="absolute -top-1/2 -right-1/3 w-[80%] h-[160%] pointer-events-none"
+                style={{ background: "radial-gradient(ellipse at center, #9AB1C835 0%, transparent 60%)" }}
+              />
+              <div className="relative w-12 h-12 rounded-full bg-shell/10 flex items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
@@ -53,30 +62,30 @@ export default function ContactPage() {
                   strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="text-cream"
+                  className="text-shell"
                 >
                   <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
                 </svg>
               </div>
-              <div>
-                <p className="font-serif text-xl font-semibold text-cream mb-2">
+              <div className="relative">
+                <p className="text-xl font-light text-shell mb-2 tracking-tight">
                   Event Inquiries
                 </p>
-                <p className="text-cream/60 text-sm leading-relaxed">
-                  Ready to bring NÜMA to your event? Fill out our intake form
+                <p className="text-shell/65 text-sm leading-relaxed font-light">
+                  Ready to bring nüma to your event? Fill out our intake form
                   and we&apos;ll reach back out with a custom proposal.
                 </p>
               </div>
               <Link href={INQUIRY_URL}
-                className="inline-flex items-center justify-center px-6 py-3 bg-cream text-forest text-sm font-semibold rounded-full hover:bg-tan-light transition-all duration-300 tracking-wide"
+                className="relative inline-flex items-center justify-center px-6 py-3 bg-shell text-aubergine text-[11px] font-medium uppercase rounded-full hover:bg-sky-light transition-all duration-300 tracking-[0.2em]"
               >
                 Open Inquiry Form
               </Link>
             </div>
 
             {/* Instagram */}
-            <div className="rounded-3xl p-10 flex flex-col gap-6 bg-cream border border-cream-dark hover:border-tan-light transition-all duration-300">
-              <div className="w-12 h-12 rounded-full bg-forest/8 flex items-center justify-center">
+            <div className="rounded-3xl p-10 flex flex-col gap-6 bg-shell border border-sand hover:border-sky transition-all duration-300">
+              <div className="w-12 h-12 rounded-full bg-sky/15 flex items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
@@ -87,7 +96,7 @@ export default function ContactPage() {
                   strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="text-forest"
+                  className="text-sky-dark"
                 >
                   <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
                   <circle cx="12" cy="12" r="4" />
@@ -95,10 +104,10 @@ export default function ContactPage() {
                 </svg>
               </div>
               <div>
-                <p className="font-serif text-xl font-semibold text-forest mb-2">
+                <p className="text-xl font-light text-aubergine mb-2 tracking-tight">
                   Instagram
                 </p>
-                <p className="text-warm-gray text-sm leading-relaxed">
+                <p className="text-warm-gray text-sm leading-relaxed font-light">
                   Follow along for event snapshots, behind-the-scenes moments,
                   and bowl inspiration. DMs welcome for quick questions.
                 </p>
@@ -107,7 +116,7 @@ export default function ContactPage() {
                 href="https://www.instagram.com/numa.acai/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm font-medium text-forest hover:text-forest-light transition-colors tracking-wide"
+                className="inline-flex items-center gap-2 text-sm font-light text-aubergine hover:text-coral transition-colors tracking-wide"
               >
                 @numa.acai
                 <svg
@@ -128,13 +137,13 @@ export default function ContactPage() {
           </div>
 
           {/* Email note */}
-          <div className="mt-8 p-6 rounded-2xl bg-cream-dark/40 border border-cream-dark text-center">
-            <p className="text-sm text-warm-gray">
-              <span className="font-medium text-charcoal">Prefer email?</span>{" "}
+          <div className="mt-8 p-6 rounded-2xl bg-sand/50 border border-sand text-center">
+            <p className="text-sm text-warm-gray font-light">
+              <span className="font-medium text-aubergine">Prefer email?</span>{" "}
               Reach us at{" "}
               <a
                 href="mailto:hello@numaacai.com"
-                className="text-forest hover:text-forest-light transition-colors underline underline-offset-2"
+                className="text-coral hover:text-rose transition-colors underline underline-offset-4 decoration-coral/40"
               >
                 hello@numaacai.com
               </a>
@@ -143,13 +152,14 @@ export default function ContactPage() {
 
           {/* Response time */}
           <div className="mt-16 text-center">
-            <p className="text-xs font-semibold tracking-[0.2em] uppercase text-tan mb-3">
+            <p className="text-[11px] font-medium tracking-[0.32em] uppercase text-sky-dark mb-4">
               Response Time
             </p>
-            <p className="font-serif text-2xl font-medium text-forest">
-              We typically respond within 24–48 hours.
+            <p className="text-2xl lg:text-3xl font-extralight text-aubergine tracking-tight">
+              We typically respond within{" "}
+              <span className="font-script text-coral text-3xl lg:text-4xl">24–48 hours</span>.
             </p>
-            <p className="text-warm-gray text-sm mt-3 max-w-md mx-auto leading-relaxed">
+            <p className="text-warm-gray text-sm mt-4 max-w-md mx-auto leading-relaxed font-light">
               We review every inquiry personally and will follow up with care.
               For time-sensitive requests, Instagram DMs are often the fastest.
             </p>

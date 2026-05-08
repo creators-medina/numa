@@ -59,17 +59,22 @@ export default function TestimonialsPage() {
     <>
       {/* Hero */}
       <section
-        className="pt-36 pb-16"
-        style={{ background: "linear-gradient(160deg, #F0EAE0 0%, #FAF7F2 100%)" }}
+        className="pt-36 pb-16 relative overflow-hidden"
+        style={{ background: "linear-gradient(160deg, #DDE5EE 0%, #F1F0EB 60%, #EFE5D4 100%)" }}
       >
-        <div className="max-w-4xl mx-auto px-6 lg:px-10 text-center">
-          <p className="text-xs font-semibold tracking-[0.25em] uppercase text-tan mb-5">
+        <div
+          className="absolute -top-1/4 -right-1/4 w-[70%] h-[140%] pointer-events-none"
+          style={{ background: "radial-gradient(ellipse at center, #9AB1C840 0%, transparent 60%)" }}
+        />
+        <div className="relative max-w-4xl mx-auto px-6 lg:px-10 text-center">
+          <p className="text-[11px] font-medium tracking-[0.32em] uppercase text-sky-dark mb-6">
             Kind Words
           </p>
-          <h1 className="font-serif text-5xl lg:text-6xl font-semibold text-forest leading-tight mb-5">
-            Stories from Our Guests
+          <h1 className="text-5xl lg:text-6xl font-extralight text-aubergine leading-[1.05] mb-5 tracking-tight">
+            Stories from{" "}
+            <span className="font-script text-coral text-6xl lg:text-7xl">our guests</span>
           </h1>
-          <p className="text-lg text-warm-gray leading-relaxed max-w-xl mx-auto">
+          <p className="text-base text-warm-gray leading-relaxed max-w-xl mx-auto font-light">
             The moments that matter most are the ones your guests carry with them.
             Here&apos;s what some of them have shared.
           </p>
@@ -77,26 +82,26 @@ export default function TestimonialsPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 bg-cream">
+      <section className="py-24 bg-shell">
         <div className="max-w-6xl mx-auto px-6 lg:px-10">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {testimonials.map((t, i) => (
               <div
                 key={i}
-                className="bg-cream rounded-2xl p-8 flex flex-col gap-6 border border-cream-dark hover:border-tan-light hover:shadow-md transition-all duration-300"
+                className="bg-shell rounded-2xl p-8 flex flex-col gap-6 border border-sand hover:border-sky hover:shadow-md transition-all duration-300"
               >
-                <div className="text-tan text-3xl font-serif leading-none">&ldquo;</div>
-                <p className="text-charcoal/70 text-sm leading-relaxed italic flex-1">
+                <div className="font-script text-coral text-5xl leading-none">&ldquo;</div>
+                <p className="text-charcoal/75 text-sm leading-relaxed italic flex-1 font-light">
                   {t.quote}
                 </p>
-                <div className="border-t border-cream-dark pt-5">
-                  <p className="font-serif text-base font-semibold text-forest">
+                <div className="border-t border-sand pt-5">
+                  <p className="text-base font-light text-aubergine tracking-tight">
                     {t.author}
                   </p>
-                  <p className="text-xs text-warm-gray tracking-wide mt-1">
+                  <p className="text-[11px] uppercase text-sky-dark tracking-[0.2em] mt-1.5 font-medium">
                     {t.event}
                   </p>
-                  <p className="text-xs text-warm-gray-light mt-0.5">
+                  <p className="text-xs text-warm-gray-light mt-1 font-light">
                     {t.location}
                   </p>
                 </div>
@@ -108,19 +113,24 @@ export default function TestimonialsPage() {
 
       {/* CTA */}
       <section
-        className="py-20"
-        style={{ background: "linear-gradient(135deg, #1B302A 0%, #2C4A3E 100%)" }}
+        className="py-24 relative overflow-hidden"
+        style={{ background: "linear-gradient(135deg, #1F1018 0%, #361D29 55%, #745A67 100%)" }}
       >
-        <div className="max-w-3xl mx-auto px-6 lg:px-10 text-center">
-          <h2 className="font-serif text-4xl font-semibold text-cream mb-5">
-            Your Event Could Be Next
+        <div
+          className="absolute -top-1/3 -right-1/4 w-[60%] h-[120%] pointer-events-none"
+          style={{ background: "radial-gradient(ellipse at center, #9AB1C840 0%, transparent 65%)" }}
+        />
+        <div className="relative max-w-3xl mx-auto px-6 lg:px-10 text-center">
+          <h2 className="text-4xl lg:text-5xl font-extralight text-shell mb-5 tracking-tight leading-tight">
+            Your event could be{" "}
+            <span className="font-script text-coral text-5xl lg:text-6xl">next</span>
           </h2>
-          <p className="text-cream/60 leading-relaxed mb-10 max-w-xl mx-auto">
-            Join the growing list of gatherings where NÜMA turned a great event
+          <p className="text-shell/65 leading-relaxed mb-10 max-w-xl mx-auto font-light">
+            Join the growing list of gatherings where nüma turned a great event
             into an unforgettable one.
           </p>
           <Link href={INQUIRY_URL}
-            className="inline-flex items-center px-8 py-4 bg-cream text-forest text-sm font-semibold rounded-full hover:bg-tan-light transition-all duration-300 tracking-wide"
+            className="inline-flex items-center px-9 py-4 bg-shell text-aubergine text-[11px] font-medium uppercase rounded-full hover:bg-sky-light transition-all duration-300 tracking-[0.2em] shadow-lg"
           >
             Inquire to Book
           </Link>

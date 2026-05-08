@@ -125,7 +125,7 @@ export default function LeadDetailModal({ lead, columns, onClose, onUpdate }: Pr
               <select
                 value={localLead.pipeline_column_id}
                 onChange={e => changeStage(e.target.value)}
-                className="text-xs font-semibold px-2 py-1 rounded-full bg-[#2C4A3E] text-white border-none outline-none cursor-pointer"
+                className="text-xs font-semibold px-2 py-1 rounded-full bg-[#361D29] text-white border-none outline-none cursor-pointer"
               >
                 {columns.map(c => <option key={c.id} value={c.id}>{c.name}</option>)}
               </select>
@@ -162,7 +162,7 @@ export default function LeadDetailModal({ lead, columns, onClose, onUpdate }: Pr
                   onChange={e => setLocalLead({ ...localLead, [field]: e.target.value || null } as CrmLead)}
                   onBlur={e => save({ [field]: e.target.value || null } as Partial<CrmLead>)}
                   placeholder="—"
-                  className="w-full text-sm text-gray-700 bg-gray-50 rounded-lg px-3 py-1.5 border border-transparent focus:border-[#2C4A3E] focus:bg-white outline-none transition-colors"
+                  className="w-full text-sm text-gray-700 bg-gray-50 rounded-lg px-3 py-1.5 border border-transparent focus:border-[#361D29] focus:bg-white outline-none transition-colors"
                 />
               </div>
             ))}
@@ -172,7 +172,7 @@ export default function LeadDetailModal({ lead, columns, onClose, onUpdate }: Pr
               <select
                 value={localLead.service_type ?? ""}
                 onChange={e => save({ service_type: e.target.value || null })}
-                className="w-full text-sm text-gray-700 bg-gray-50 rounded-lg px-3 py-1.5 border border-transparent focus:border-[#2C4A3E] focus:bg-white outline-none"
+                className="w-full text-sm text-gray-700 bg-gray-50 rounded-lg px-3 py-1.5 border border-transparent focus:border-[#361D29] focus:bg-white outline-none"
               >
                 <option value="">—</option>
                 {SERVICE_TYPES.map(t => <option key={t} value={t}>{t}</option>)}
@@ -184,7 +184,7 @@ export default function LeadDetailModal({ lead, columns, onClose, onUpdate }: Pr
               <select
                 value={localLead.source ?? ""}
                 onChange={e => save({ source: (e.target.value as CrmLead["source"]) || null })}
-                className="w-full text-sm text-gray-700 bg-gray-50 rounded-lg px-3 py-1.5 border border-transparent focus:border-[#2C4A3E] focus:bg-white outline-none capitalize"
+                className="w-full text-sm text-gray-700 bg-gray-50 rounded-lg px-3 py-1.5 border border-transparent focus:border-[#361D29] focus:bg-white outline-none capitalize"
               >
                 <option value="">—</option>
                 {SOURCES.map(s => <option key={s} value={s} className="capitalize">{s}</option>)}
@@ -202,14 +202,14 @@ export default function LeadDetailModal({ lead, columns, onClose, onUpdate }: Pr
                 onChange={e => setLocalLead({ ...localLead, next_action: e.target.value || null })}
                 onBlur={e => save({ next_action: e.target.value || null })}
                 placeholder="e.g. Send quote"
-                className="text-sm text-gray-700 bg-gray-50 rounded-lg px-3 py-2 border border-transparent focus:border-[#2C4A3E] focus:bg-white outline-none"
+                className="text-sm text-gray-700 bg-gray-50 rounded-lg px-3 py-2 border border-transparent focus:border-[#361D29] focus:bg-white outline-none"
               />
               <input
                 type="date"
                 value={localLead.next_action_due ?? ""}
                 onChange={e => setLocalLead({ ...localLead, next_action_due: e.target.value || null })}
                 onBlur={e => save({ next_action_due: e.target.value || null })}
-                className="text-sm text-gray-700 bg-gray-50 rounded-lg px-3 py-2 border border-transparent focus:border-[#2C4A3E] focus:bg-white outline-none"
+                className="text-sm text-gray-700 bg-gray-50 rounded-lg px-3 py-2 border border-transparent focus:border-[#361D29] focus:bg-white outline-none"
               />
             </div>
           </div>
@@ -219,7 +219,7 @@ export default function LeadDetailModal({ lead, columns, onClose, onUpdate }: Pr
             <p className="text-xs text-gray-400 font-semibold tracking-widest uppercase mb-3">Tags</p>
             <div className="flex flex-wrap gap-2 mb-3">
               {(localLead.tags || []).map(tag => (
-                <span key={tag} className="flex items-center gap-1 px-3 py-1 rounded-full bg-[#FAF7F2] border border-[#E2CBA8] text-xs text-[#2C4A3E] font-medium">
+                <span key={tag} className="flex items-center gap-1 px-3 py-1 rounded-full bg-[#F1F0EB] border border-[#C8D3DD] text-xs text-[#361D29] font-medium">
                   {tag}
                   <button onClick={() => removeTag(tag)} className="text-gray-400 hover:text-red-400 leading-none">×</button>
                 </span>
@@ -231,9 +231,9 @@ export default function LeadDetailModal({ lead, columns, onClose, onUpdate }: Pr
                 onChange={e => setNewTag(e.target.value)}
                 onKeyDown={e => e.key === "Enter" && addTag()}
                 placeholder="Add tag..."
-                className="flex-1 text-sm bg-gray-50 rounded-lg px-3 py-1.5 border border-transparent focus:border-[#2C4A3E] focus:bg-white outline-none"
+                className="flex-1 text-sm bg-gray-50 rounded-lg px-3 py-1.5 border border-transparent focus:border-[#361D29] focus:bg-white outline-none"
               />
-              <button onClick={addTag} className="px-3 py-1.5 bg-[#2C4A3E] text-white text-xs rounded-lg hover:bg-[#3D6355] transition-colors">Add</button>
+              <button onClick={addTag} className="px-3 py-1.5 bg-[#361D29] text-white text-xs rounded-lg hover:bg-[#485A47] transition-colors">Add</button>
             </div>
           </div>
 
@@ -246,7 +246,7 @@ export default function LeadDetailModal({ lead, columns, onClose, onUpdate }: Pr
               onBlur={e => save({ notes_text: e.target.value || null })}
               rows={3}
               placeholder="Internal notes visible only to your team..."
-              className="w-full text-sm text-gray-700 bg-gray-50 rounded-lg px-3 py-2 border border-transparent focus:border-[#2C4A3E] focus:bg-white outline-none resize-none"
+              className="w-full text-sm text-gray-700 bg-gray-50 rounded-lg px-3 py-2 border border-transparent focus:border-[#361D29] focus:bg-white outline-none resize-none"
             />
           </div>
 
@@ -258,12 +258,12 @@ export default function LeadDetailModal({ lead, columns, onClose, onUpdate }: Pr
               onChange={e => setNoteText(e.target.value)}
               rows={2}
               placeholder="Add a note, update, or action taken..."
-              className="w-full text-sm text-gray-700 bg-gray-50 rounded-xl px-4 py-3 border border-gray-200 focus:border-[#2C4A3E] focus:bg-white outline-none resize-none mb-2"
+              className="w-full text-sm text-gray-700 bg-gray-50 rounded-xl px-4 py-3 border border-gray-200 focus:border-[#361D29] focus:bg-white outline-none resize-none mb-2"
             />
             <button
               onClick={addNote}
               disabled={addingNote || !noteText.trim()}
-              className="px-5 py-2 bg-[#2C4A3E] text-white text-sm rounded-full hover:bg-[#3D6355] transition-colors disabled:opacity-50"
+              className="px-5 py-2 bg-[#361D29] text-white text-sm rounded-full hover:bg-[#485A47] transition-colors disabled:opacity-50"
             >
               {addingNote ? "Saving..." : "Add Note"}
             </button>
@@ -278,7 +278,7 @@ export default function LeadDetailModal({ lead, columns, onClose, onUpdate }: Pr
               <div className="space-y-4">
                 {timeline.map(item => (
                   <div key={item.id} className="flex gap-3">
-                    <div className={`mt-1 w-2 h-2 rounded-full shrink-0 ${item.type === "note" ? "bg-[#C9A87C]" : "bg-[#8FAF97]"}`} />
+                    <div className={`mt-1 w-2 h-2 rounded-full shrink-0 ${item.type === "note" ? "bg-[#9AB1C8]" : "bg-[#9AB1C8]"}`} />
                     <div className="flex-1 min-w-0">
                       <p className="text-sm text-gray-700">{item.body}</p>
                       <p className="text-xs text-gray-400 mt-0.5">{formatTs(item.created_at)}</p>

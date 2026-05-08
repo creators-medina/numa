@@ -34,16 +34,20 @@ export default function AboutPage() {
     <>
       {/* Hero */}
       <section
-        className="pt-36 pb-20 relative"
-        style={{ background: "linear-gradient(160deg, #F0EAE0 0%, #FAF7F2 100%)" }}
+        className="pt-36 pb-20 relative overflow-hidden"
+        style={{ background: "linear-gradient(160deg, #DDE5EE 0%, #F1F0EB 60%, #EFE5D4 100%)" }}
       >
-        <div className="max-w-4xl mx-auto px-6 lg:px-10 text-center">
-          <p className="text-xs font-semibold tracking-[0.25em] uppercase text-tan mb-5">
+        <div
+          className="absolute -top-1/4 right-0 w-2/3 h-[140%] pointer-events-none"
+          style={{ background: "radial-gradient(ellipse at 70% 30%, #9AB1C840 0%, transparent 60%)" }}
+        />
+        <div className="relative max-w-4xl mx-auto px-6 lg:px-10 text-center">
+          <p className="text-[11px] font-medium tracking-[0.32em] uppercase text-sky-dark mb-6">
             Our Story
           </p>
-          <h1 className="font-serif text-5xl lg:text-6xl font-semibold text-forest leading-tight mb-6">
-            Made with Love,{" "}
-            <span className="italic font-normal text-berry">Served with Intention</span>
+          <h1 className="text-5xl lg:text-6xl font-extralight text-aubergine leading-[1.05] mb-6 tracking-tight">
+            Made with love,{" "}
+            <span className="font-script text-coral text-6xl lg:text-7xl">served with intention</span>
           </h1>
         </div>
       </section>
@@ -107,28 +111,28 @@ export default function AboutPage() {
       {/* Values */}
       <section
         className="py-20"
-        style={{ background: "linear-gradient(180deg, #F0EAE0 0%, #FAF7F2 100%)" }}
+        style={{ background: "linear-gradient(180deg, #EFE5D4 0%, #F1F0EB 100%)" }}
       >
         <div className="max-w-6xl mx-auto px-6 lg:px-10">
           <div className="text-center mb-14">
-            <p className="text-xs font-semibold tracking-[0.25em] uppercase text-tan mb-4">
+            <p className="text-[11px] font-medium tracking-[0.32em] uppercase text-sky-dark mb-4">
               What Guides Us
             </p>
-            <h2 className="font-serif text-4xl font-semibold text-forest">
-              Our Values
+            <h2 className="text-4xl font-extralight text-aubergine tracking-tight">
+              Our values
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {values.map((v, i) => (
               <div
                 key={i}
-                className="p-8 rounded-2xl bg-cream border border-cream-dark hover:border-tan-light transition-all duration-300"
+                className="p-8 rounded-2xl bg-shell border border-sand hover:border-sky transition-all duration-300"
               >
-                <div className="w-8 h-0.5 bg-tan mb-5" />
-                <h3 className="font-serif text-xl font-semibold text-forest mb-3">
+                <div className="w-8 h-0.5 bg-sky mb-5" />
+                <h3 className="text-xl font-light text-aubergine mb-3 tracking-tight">
                   {v.title}
                 </h3>
-                <p className="text-warm-gray text-sm leading-relaxed">{v.body}</p>
+                <p className="text-warm-gray text-sm leading-relaxed font-light">{v.body}</p>
               </div>
             ))}
           </div>
@@ -137,19 +141,24 @@ export default function AboutPage() {
 
       {/* CTA */}
       <section
-        className="py-20"
-        style={{ background: "linear-gradient(135deg, #1B302A 0%, #2C4A3E 100%)" }}
+        className="py-24 relative overflow-hidden"
+        style={{ background: "linear-gradient(135deg, #1F1018 0%, #361D29 55%, #745A67 100%)" }}
       >
-        <div className="max-w-3xl mx-auto px-6 lg:px-10 text-center">
-          <h2 className="font-serif text-4xl font-semibold text-cream mb-5">
-            Let&apos;s Create Something Together
+        <div
+          className="absolute -top-1/3 -right-1/4 w-[60%] h-[120%] pointer-events-none"
+          style={{ background: "radial-gradient(ellipse at center, #9AB1C840 0%, transparent 65%)" }}
+        />
+        <div className="relative max-w-3xl mx-auto px-6 lg:px-10 text-center">
+          <h2 className="text-4xl lg:text-5xl font-extralight text-shell mb-5 tracking-tight leading-tight">
+            Let&apos;s create something{" "}
+            <span className="font-script text-coral text-5xl lg:text-6xl">together</span>
           </h2>
-          <p className="text-cream/60 leading-relaxed mb-10">
+          <p className="text-shell/65 leading-relaxed mb-10 font-light">
             We&apos;d love to learn about your event and build something beautiful
             around it.
           </p>
           <Link href={INQUIRY_URL}
-            className="inline-flex items-center px-8 py-4 bg-cream text-forest text-sm font-semibold rounded-full hover:bg-tan-light transition-all duration-300 tracking-wide"
+            className="inline-flex items-center px-9 py-4 bg-shell text-aubergine text-[11px] font-medium uppercase rounded-full hover:bg-sky-light transition-all duration-300 tracking-[0.2em] shadow-lg"
           >
             Inquire to Book
           </Link>

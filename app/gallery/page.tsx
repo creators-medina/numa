@@ -33,25 +33,30 @@ export default function GalleryPage() {
     <>
       {/* Hero */}
       <section
-        className="pt-36 pb-16"
-        style={{ background: "linear-gradient(160deg, #F0EAE0 0%, #FAF7F2 100%)" }}
+        className="pt-36 pb-16 relative overflow-hidden"
+        style={{ background: "linear-gradient(160deg, #DDE5EE 0%, #F1F0EB 60%, #EFE5D4 100%)" }}
       >
-        <div className="max-w-4xl mx-auto px-6 lg:px-10 text-center">
-          <p className="text-xs font-semibold tracking-[0.25em] uppercase text-tan mb-5">
+        <div
+          className="absolute -top-1/4 -right-1/4 w-[70%] h-[140%] pointer-events-none"
+          style={{ background: "radial-gradient(ellipse at center, #9AB1C840 0%, transparent 60%)" }}
+        />
+        <div className="relative max-w-4xl mx-auto px-6 lg:px-10 text-center">
+          <p className="text-[11px] font-medium tracking-[0.32em] uppercase text-sky-dark mb-6">
             Visual Story
           </p>
-          <h1 className="font-serif text-5xl lg:text-6xl font-semibold text-forest leading-tight mb-5">
-            A Feast for the Eyes
+          <h1 className="text-5xl lg:text-6xl font-extralight text-aubergine leading-[1.05] mb-5 tracking-tight">
+            A feast for{" "}
+            <span className="font-script text-coral text-6xl lg:text-7xl">the eyes</span>
           </h1>
-          <p className="text-lg text-warm-gray leading-relaxed max-w-xl mx-auto">
-            Every NÜMA setup is styled as intentionally as the bowls themselves.
+          <p className="text-base text-warm-gray leading-relaxed max-w-xl mx-auto font-light">
+            Every nüma setup is styled as intentionally as the bowls themselves.
             Explore the experience through imagery.
           </p>
         </div>
       </section>
 
       {/* Gallery grid */}
-      <section className="py-16 bg-cream">
+      <section className="py-16 bg-shell">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid grid-cols-3 sm:grid-cols-4 auto-rows-[160px] gap-3">
             {galleryItems.map((item, i) => (

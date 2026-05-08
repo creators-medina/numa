@@ -51,7 +51,7 @@ function DroppableColumnBody({
       {isEmpty && (
         <div
           className={`mt-2 h-16 rounded-lg border-2 border-dashed flex items-center justify-center transition-colors ${
-            isOver ? "border-[#2C4A3E] bg-[#2C4A3E]/5" : "border-gray-100"
+            isOver ? "border-[#361D29] bg-[#361D29]/5" : "border-gray-100"
           }`}
         >
           <p className="text-xs text-gray-300">Drop here</p>
@@ -76,8 +76,8 @@ function NotConfigured() {
           Add these two environment variables to your Vercel project, then redeploy:
         </p>
         <div className="bg-gray-50 rounded-xl border border-gray-200 p-4 text-left text-xs font-mono space-y-2 mb-6">
-          <p><span className="text-[#2C4A3E] font-semibold">NEXT_PUBLIC_SUPABASE_URL</span>=https://xxxx.supabase.co</p>
-          <p><span className="text-[#2C4A3E] font-semibold">NEXT_PUBLIC_SUPABASE_ANON_KEY</span>=eyJh...</p>
+          <p><span className="text-[#361D29] font-semibold">NEXT_PUBLIC_SUPABASE_URL</span>=https://xxxx.supabase.co</p>
+          <p><span className="text-[#361D29] font-semibold">NEXT_PUBLIC_SUPABASE_ANON_KEY</span>=eyJh...</p>
         </div>
         <p className="text-xs text-gray-400">
           Find these in your Supabase dashboard → Settings → API. Also make sure you&apos;ve run{" "}
@@ -434,7 +434,7 @@ function AdminBoardInner() {
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search leads..."
-              className="w-full pl-8 pr-3 py-1.5 text-sm bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-[#2C4A3E] focus:bg-white transition-colors"
+              className="w-full pl-8 pr-3 py-1.5 text-sm bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-[#361D29] focus:bg-white transition-colors"
             />
           </div>
 
@@ -443,7 +443,7 @@ function AdminBoardInner() {
             <select
               value={filterAssigned}
               onChange={(e) => setFilterAssigned(e.target.value)}
-              className="text-sm bg-gray-50 border border-gray-200 rounded-lg px-3 py-1.5 focus:outline-none focus:border-[#2C4A3E] text-gray-600"
+              className="text-sm bg-gray-50 border border-gray-200 rounded-lg px-3 py-1.5 focus:outline-none focus:border-[#361D29] text-gray-600"
             >
               <option value="">All reps</option>
               {assignees.map((a) => (
@@ -461,7 +461,7 @@ function AdminBoardInner() {
             </span>
             <button
               onClick={() => setShowAddLead(true)}
-              className="flex items-center gap-2 px-4 py-2 bg-[#2C4A3E] text-white text-sm font-medium rounded-full hover:bg-[#3D6355] transition-colors"
+              className="flex items-center gap-2 px-4 py-2 bg-[#361D29] text-white text-sm font-medium rounded-full hover:bg-[#485A47] transition-colors"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -520,12 +520,12 @@ function AdminBoardInner() {
                           if (e.key === "Enter") commitRename(col);
                           if (e.key === "Escape") setRenamingColId(null);
                         }}
-                        className="flex-1 text-sm font-semibold text-gray-800 bg-gray-50 rounded px-2 py-0.5 border border-[#2C4A3E] outline-none"
+                        className="flex-1 text-sm font-semibold text-gray-800 bg-gray-50 rounded px-2 py-0.5 border border-[#361D29] outline-none"
                       />
                     ) : (
                       <button
                         onDoubleClick={() => startRename(col)}
-                        className="flex-1 text-left text-sm font-semibold text-gray-800 hover:text-[#2C4A3E] transition-colors truncate"
+                        className="flex-1 text-left text-sm font-semibold text-gray-800 hover:text-[#361D29] transition-colors truncate"
                         title="Double-click to rename"
                       >
                         {col.name}
@@ -602,12 +602,12 @@ function AdminBoardInner() {
                     }}
                     onBlur={submitNewColumn}
                     placeholder="Column name..."
-                    className="w-full text-sm border border-gray-200 rounded-lg px-3 py-2 mb-3 focus:outline-none focus:border-[#2C4A3E]"
+                    className="w-full text-sm border border-gray-200 rounded-lg px-3 py-2 mb-3 focus:outline-none focus:border-[#361D29]"
                   />
                   <div className="flex gap-2">
                     <button
                       onClick={submitNewColumn}
-                      className="flex-1 py-1.5 bg-[#2C4A3E] text-white text-xs rounded-lg hover:bg-[#3D6355] transition-colors"
+                      className="flex-1 py-1.5 bg-[#361D29] text-white text-xs rounded-lg hover:bg-[#485A47] transition-colors"
                     >
                       Add
                     </button>

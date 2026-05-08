@@ -61,16 +61,17 @@ export default function InquiryForm() {
   if (state === "success") {
     return (
       <div className="flex flex-col items-center justify-center text-center py-16 px-6 gap-6">
-        <div className="w-16 h-16 rounded-full bg-forest/10 flex items-center justify-center">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-forest">
+        <div className="w-16 h-16 rounded-full bg-sky/15 flex items-center justify-center ring-4 ring-sky/10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-sky-dark">
             <polyline points="20 6 9 17 4 12"/>
           </svg>
         </div>
         <div>
-          <h3 className="font-serif text-2xl font-semibold text-forest mb-2">
-            We received your inquiry!
+          <h3 className="text-2xl font-extralight text-aubergine mb-2 tracking-tight">
+            We received your{" "}
+            <span className="font-script text-coral text-3xl">inquiry!</span>
           </h3>
-          <p className="text-warm-gray leading-relaxed max-w-sm">
+          <p className="text-warm-gray leading-relaxed max-w-sm font-light">
             Thank you for reaching out. We&apos;ll review your details and get back to
             you personally within 24–48 hours.
           </p>
@@ -79,7 +80,7 @@ export default function InquiryForm() {
           href="https://www.instagram.com/numa.acai/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm text-forest hover:text-forest-light underline underline-offset-2 transition-colors"
+          className="text-sm text-aubergine hover:text-coral underline underline-offset-4 decoration-coral/40 transition-colors font-light"
         >
           Follow us on Instagram while you wait →
         </a>
@@ -93,26 +94,26 @@ export default function InquiryForm() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label className="block text-xs font-semibold tracking-wider text-charcoal/60 uppercase mb-2">
-            Full Name <span className="text-berry">*</span>
+            Full Name <span className="text-coral">*</span>
           </label>
           <input
             name="full_name"
             type="text"
             required
             placeholder="Your name"
-            className="w-full px-4 py-3 rounded-xl border border-cream-dark bg-cream text-charcoal placeholder-warm-gray-light focus:outline-none focus:border-forest focus:ring-1 focus:ring-forest transition-colors text-sm"
+            className="w-full px-4 py-3 rounded-xl border border-sand bg-shell text-charcoal placeholder-warm-gray-light focus:outline-none focus:border-sky-dark focus:ring-1 focus:ring-sky-dark transition-colors text-sm"
           />
         </div>
         <div>
           <label className="block text-xs font-semibold tracking-wider text-charcoal/60 uppercase mb-2">
-            Email <span className="text-berry">*</span>
+            Email <span className="text-coral">*</span>
           </label>
           <input
             name="email"
             type="email"
             required
             placeholder="your@email.com"
-            className="w-full px-4 py-3 rounded-xl border border-cream-dark bg-cream text-charcoal placeholder-warm-gray-light focus:outline-none focus:border-forest focus:ring-1 focus:ring-forest transition-colors text-sm"
+            className="w-full px-4 py-3 rounded-xl border border-sand bg-shell text-charcoal placeholder-warm-gray-light focus:outline-none focus:border-sky-dark focus:ring-1 focus:ring-sky-dark transition-colors text-sm"
           />
         </div>
       </div>
@@ -127,18 +128,18 @@ export default function InquiryForm() {
             name="phone"
             type="tel"
             placeholder="(555) 000-0000"
-            className="w-full px-4 py-3 rounded-xl border border-cream-dark bg-cream text-charcoal placeholder-warm-gray-light focus:outline-none focus:border-forest focus:ring-1 focus:ring-forest transition-colors text-sm"
+            className="w-full px-4 py-3 rounded-xl border border-sand bg-shell text-charcoal placeholder-warm-gray-light focus:outline-none focus:border-sky-dark focus:ring-1 focus:ring-sky-dark transition-colors text-sm"
           />
         </div>
         <div>
           <label className="block text-xs font-semibold tracking-wider text-charcoal/60 uppercase mb-2">
-            Event Type <span className="text-berry">*</span>
+            Event Type <span className="text-coral">*</span>
           </label>
           <select
             name="event_type"
             required
             defaultValue=""
-            className="w-full px-4 py-3 rounded-xl border border-cream-dark bg-cream text-charcoal focus:outline-none focus:border-forest focus:ring-1 focus:ring-forest transition-colors text-sm appearance-none"
+            className="w-full px-4 py-3 rounded-xl border border-sand bg-shell text-charcoal focus:outline-none focus:border-sky-dark focus:ring-1 focus:ring-sky-dark transition-colors text-sm appearance-none"
           >
             <option value="" disabled>Select event type</option>
             {eventTypes.map((t) => (
@@ -157,7 +158,7 @@ export default function InquiryForm() {
           <input
             name="event_date"
             type="date"
-            className="w-full px-4 py-3 rounded-xl border border-cream-dark bg-cream text-charcoal focus:outline-none focus:border-forest focus:ring-1 focus:ring-forest transition-colors text-sm"
+            className="w-full px-4 py-3 rounded-xl border border-sand bg-shell text-charcoal focus:outline-none focus:border-sky-dark focus:ring-1 focus:ring-sky-dark transition-colors text-sm"
           />
         </div>
         <div>
@@ -168,7 +169,7 @@ export default function InquiryForm() {
             name="guest_count"
             type="text"
             placeholder="e.g. 50–80 guests"
-            className="w-full px-4 py-3 rounded-xl border border-cream-dark bg-cream text-charcoal placeholder-warm-gray-light focus:outline-none focus:border-forest focus:ring-1 focus:ring-forest transition-colors text-sm"
+            className="w-full px-4 py-3 rounded-xl border border-sand bg-shell text-charcoal placeholder-warm-gray-light focus:outline-none focus:border-sky-dark focus:ring-1 focus:ring-sky-dark transition-colors text-sm"
           />
         </div>
       </div>
@@ -182,7 +183,7 @@ export default function InquiryForm() {
           name="venue"
           type="text"
           placeholder="e.g. The Fig House, Private Residence"
-          className="w-full px-4 py-3 rounded-xl border border-cream-dark bg-cream text-charcoal placeholder-warm-gray-light focus:outline-none focus:border-forest focus:ring-1 focus:ring-forest transition-colors text-sm"
+          className="w-full px-4 py-3 rounded-xl border border-sand bg-shell text-charcoal placeholder-warm-gray-light focus:outline-none focus:border-sky-dark focus:ring-1 focus:ring-sky-dark transition-colors text-sm"
         />
       </div>
 
@@ -196,7 +197,7 @@ export default function InquiryForm() {
             name="city"
             type="text"
             placeholder="Los Angeles"
-            className="w-full px-4 py-3 rounded-xl border border-cream-dark bg-cream text-charcoal placeholder-warm-gray-light focus:outline-none focus:border-forest focus:ring-1 focus:ring-forest transition-colors text-sm"
+            className="w-full px-4 py-3 rounded-xl border border-sand bg-shell text-charcoal placeholder-warm-gray-light focus:outline-none focus:border-sky-dark focus:ring-1 focus:ring-sky-dark transition-colors text-sm"
           />
         </div>
         <div>
@@ -207,7 +208,7 @@ export default function InquiryForm() {
             name="state"
             type="text"
             placeholder="CA"
-            className="w-full px-4 py-3 rounded-xl border border-cream-dark bg-cream text-charcoal placeholder-warm-gray-light focus:outline-none focus:border-forest focus:ring-1 focus:ring-forest transition-colors text-sm"
+            className="w-full px-4 py-3 rounded-xl border border-sand bg-shell text-charcoal placeholder-warm-gray-light focus:outline-none focus:border-sky-dark focus:ring-1 focus:ring-sky-dark transition-colors text-sm"
           />
         </div>
       </div>
@@ -221,13 +222,13 @@ export default function InquiryForm() {
           name="message"
           rows={4}
           placeholder="Tell us about your event vision, special requests, theme, or anything else helpful..."
-          className="w-full px-4 py-3 rounded-xl border border-cream-dark bg-cream text-charcoal placeholder-warm-gray-light focus:outline-none focus:border-forest focus:ring-1 focus:ring-forest transition-colors text-sm resize-none"
+          className="w-full px-4 py-3 rounded-xl border border-sand bg-shell text-charcoal placeholder-warm-gray-light focus:outline-none focus:border-sky-dark focus:ring-1 focus:ring-sky-dark transition-colors text-sm resize-none"
         />
       </div>
 
       {/* Error */}
       {state === "error" && (
-        <div className="px-4 py-3 rounded-xl bg-berry/10 border border-berry/20 text-berry text-sm">
+        <div className="px-4 py-3 rounded-xl bg-coral/10 border border-coral/30 text-coral text-sm font-light">
           {errorMsg || "Something went wrong. Please try again."}
         </div>
       )}
@@ -236,7 +237,7 @@ export default function InquiryForm() {
       <button
         type="submit"
         disabled={state === "loading"}
-        className="w-full inline-flex items-center justify-center px-8 py-4 bg-forest text-cream text-sm font-semibold rounded-full hover:bg-forest-light transition-all duration-300 tracking-wide shadow-md hover:shadow-lg disabled:opacity-60 disabled:cursor-not-allowed gap-2"
+        className="w-full inline-flex items-center justify-center px-8 py-4 bg-aubergine text-shell text-[11px] font-medium uppercase rounded-full hover:bg-olive transition-all duration-300 tracking-[0.2em] shadow-md hover:shadow-lg disabled:opacity-60 disabled:cursor-not-allowed gap-2"
       >
         {state === "loading" ? (
           <>

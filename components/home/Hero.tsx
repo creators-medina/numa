@@ -11,42 +11,43 @@ export default function Hero() {
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(160deg, #F0EAE0 0%, #FAF7F2 40%, #E8EDE9 100%)",
+            "linear-gradient(165deg, #DDE5EE 0%, #F1F0EB 45%, #EFE5D4 100%)",
         }}
       />
 
-      {/* Decorative botanical accent */}
+      {/* Decorative dusty-blue bloom */}
       <div
-        className="absolute top-0 right-0 w-1/2 h-full opacity-8 pointer-events-none"
+        className="absolute top-0 right-0 w-2/3 h-full pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse at 80% 20%, #2C4A3E18 0%, transparent 60%)",
+            "radial-gradient(ellipse at 75% 15%, #9AB1C855 0%, transparent 55%)",
         }}
       />
+      {/* Soft coral whisper */}
       <div
-        className="absolute bottom-0 left-0 w-1/3 h-1/2 opacity-8 pointer-events-none"
+        className="absolute bottom-0 left-0 w-1/2 h-1/2 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse at 20% 80%, #7C3D4E12 0%, transparent 60%)",
+            "radial-gradient(ellipse at 15% 85%, #FE5D5B14 0%, transparent 60%)",
         }}
       />
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-10 text-center pt-28 pb-20">
         {/* Eyebrow */}
-        <p className="text-xs font-semibold tracking-[0.25em] uppercase text-tan mb-6">
+        <p className="text-[11px] font-medium tracking-[0.32em] uppercase text-sky-dark mb-7">
           Premium Açaí Event Catering
         </p>
 
         {/* Headline */}
-        <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-semibold text-forest leading-tight mb-6">
+        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extralight text-aubergine leading-[1.05] mb-7 tracking-tight">
           Elevate{" "}
-          <span className="italic font-normal text-berry">Every</span>{" "}
-          Gathering
+          <span className="font-script text-coral text-6xl sm:text-7xl lg:text-8xl">every</span>{" "}
+          gathering
         </h1>
 
         {/* Subheadline */}
-        <p className="text-lg sm:text-xl text-warm-gray leading-relaxed max-w-2xl mx-auto mb-12">
-          NÜMA brings a beautifully curated açaí pop-up directly to your event —
+        <p className="text-base sm:text-lg text-warm-gray leading-relaxed max-w-xl mx-auto mb-12 font-light">
+          A beautifully curated açaí pop-up, brought directly to your event —
           weddings, showers, private parties, brand activations, and beyond.
           Fresh, premium, and designed around your moment.
         </p>
@@ -54,13 +55,13 @@ export default function Hero() {
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
           <Link href={INQUIRY_URL}
-            className="inline-flex items-center px-8 py-4 bg-forest text-cream text-sm font-medium rounded-full hover:bg-forest-light transition-all duration-300 tracking-wide shadow-lg hover:shadow-xl"
+            className="inline-flex items-center px-9 py-4 bg-aubergine text-shell text-[11px] font-medium uppercase rounded-full hover:bg-olive transition-all duration-300 tracking-[0.2em] shadow-lg hover:shadow-xl"
           >
             Inquire to Book
           </Link>
           <Link
             href="/gallery"
-            className="inline-flex items-center px-8 py-4 border border-forest/30 text-forest text-sm font-medium rounded-full hover:bg-forest/5 transition-all duration-300 tracking-wide"
+            className="inline-flex items-center px-9 py-4 border border-aubergine/25 text-aubergine text-[11px] font-medium uppercase rounded-full hover:bg-aubergine/5 transition-all duration-300 tracking-[0.2em]"
           >
             View Gallery
           </Link>
@@ -100,8 +101,8 @@ export default function Hero() {
         </div>
 
         {/* Scroll nudge */}
-        <div className="mt-14 flex flex-col items-center gap-2 animate-bounce opacity-40">
-          <div className="w-px h-10 bg-forest/40" />
+        <div className="mt-14 flex flex-col items-center gap-2 animate-bounce opacity-50">
+          <div className="w-px h-10 bg-sky-dark/50" />
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -109,10 +110,10 @@ export default function Hero() {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            strokeWidth="1.5"
+            strokeWidth="1.25"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="text-forest"
+            className="text-sky-dark"
           >
             <polyline points="6 9 12 15 18 9" />
           </svg>
@@ -120,7 +121,7 @@ export default function Hero() {
       </div>
 
       {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-cream to-transparent pointer-events-none" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-shell to-transparent pointer-events-none" />
     </section>
   );
 }

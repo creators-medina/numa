@@ -4,32 +4,40 @@ const INQUIRY_URL = "/inquiry";
 export default function CTABand() {
   return (
     <section
-      className="py-24 relative overflow-hidden"
-      style={{ background: "linear-gradient(135deg, #1B302A 0%, #2C4A3E 60%, #3D6355 100%)" }}
+      className="py-28 relative overflow-hidden"
+      style={{ background: "linear-gradient(135deg, #1F1018 0%, #361D29 55%, #745A67 100%)" }}
     >
       {/* Decorative overlay */}
       <div
         className="absolute inset-0 opacity-10 pointer-events-none"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FAF7F2' fill-opacity='1'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23F1F0EB' fill-opacity='1'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+        }}
+      />
+      {/* Dusty blue glow */}
+      <div
+        className="absolute -top-1/3 -right-1/4 w-[60%] h-[120%] pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(ellipse at center, #9AB1C840 0%, transparent 65%)",
         }}
       />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-10 text-center">
-        <p className="text-xs font-semibold tracking-[0.25em] uppercase text-tan mb-6">
+        <p className="text-[11px] font-medium tracking-[0.32em] uppercase text-sky mb-6">
           Let&apos;s Make It Happen
         </p>
-        <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-cream leading-tight mb-6">
-          Ready to Bring NÜMA{" "}
-          <span className="italic font-normal text-tan">to Your Event?</span>
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extralight text-shell leading-[1.05] mb-7 tracking-tight">
+          Ready to bring nüma{" "}
+          <span className="font-script text-coral text-5xl sm:text-6xl lg:text-7xl">to your event?</span>
         </h2>
-        <p className="text-cream/60 text-lg leading-relaxed max-w-2xl mx-auto mb-12">
-          Every event is unique — and so is every NÜMA experience. Reach out and
-          let us create something beautiful together.
+        <p className="text-shell/65 text-base leading-relaxed max-w-xl mx-auto mb-12 font-light">
+          Every event is unique — and so is every nüma experience. Reach out and
+          let&apos;s create something beautiful together.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link href={INQUIRY_URL}
-            className="inline-flex items-center px-8 py-4 bg-cream text-forest text-sm font-semibold rounded-full hover:bg-tan-light transition-all duration-300 tracking-wide shadow-lg"
+            className="inline-flex items-center px-9 py-4 bg-shell text-aubergine text-[11px] font-medium uppercase rounded-full hover:bg-sky-light transition-all duration-300 tracking-[0.2em] shadow-lg"
           >
             Inquire to Book
           </Link>
@@ -37,7 +45,7 @@ export default function CTABand() {
             href="https://www.instagram.com/numa.acai/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 border border-cream/30 text-cream text-sm font-medium rounded-full hover:bg-cream/10 transition-all duration-300 tracking-wide"
+            className="inline-flex items-center gap-2 px-9 py-4 border border-shell/30 text-shell text-[11px] font-medium uppercase rounded-full hover:bg-shell/10 transition-all duration-300 tracking-[0.2em]"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -53,46 +53,51 @@ export default function ExperiencePage() {
     <>
       {/* Hero */}
       <section
-        className="pt-36 pb-20 relative"
-        style={{ background: "linear-gradient(160deg, #F0EAE0 0%, #FAF7F2 100%)" }}
+        className="pt-36 pb-20 relative overflow-hidden"
+        style={{ background: "linear-gradient(160deg, #DDE5EE 0%, #F1F0EB 60%, #EFE5D4 100%)" }}
       >
-        <div className="max-w-4xl mx-auto px-6 lg:px-10 text-center">
-          <p className="text-xs font-semibold tracking-[0.25em] uppercase text-tan mb-5">
+        <div
+          className="absolute -top-1/4 right-0 w-2/3 h-[140%] pointer-events-none"
+          style={{ background: "radial-gradient(ellipse at 70% 30%, #9AB1C840 0%, transparent 60%)" }}
+        />
+        <div className="relative max-w-4xl mx-auto px-6 lg:px-10 text-center">
+          <p className="text-[11px] font-medium tracking-[0.32em] uppercase text-sky-dark mb-6">
             Tailored to You
           </p>
-          <h1 className="font-serif text-5xl lg:text-6xl font-semibold text-forest leading-tight mb-6">
-            The NÜMA Experience
+          <h1 className="text-5xl lg:text-6xl font-extralight text-aubergine leading-[1.05] mb-6 tracking-tight">
+            The nüma{" "}
+            <span className="font-script text-coral text-6xl lg:text-7xl">experience</span>
           </h1>
-          <p className="text-lg text-warm-gray leading-relaxed max-w-2xl mx-auto">
+          <p className="text-base text-warm-gray leading-relaxed max-w-xl mx-auto font-light">
             We don&apos;t believe in rigid menus or one-size-fits-all packages.
-            Every NÜMA event is designed from the ground up — tailored to your
+            Every nüma event is designed from the ground up — tailored to your
             gathering, your guests, and your vision.
           </p>
         </div>
       </section>
 
       {/* Event types */}
-      <section className="py-20 bg-cream">
+      <section className="py-24 bg-shell">
         <div className="max-w-5xl mx-auto px-6 lg:px-10">
           <div className="space-y-16">
             {eventTypes.map((event, i) => (
               <div
                 key={i}
-                className="grid grid-cols-1 md:grid-cols-5 gap-8 pb-16 border-b border-cream-dark last:border-0 last:pb-0"
+                className="grid grid-cols-1 md:grid-cols-5 gap-8 pb-16 border-b border-sand last:border-0 last:pb-0"
               >
                 <div className="md:col-span-2">
-                  <p className="text-xs font-semibold tracking-[0.2em] uppercase text-tan mb-3">
+                  <p className="text-[11px] font-medium tracking-[0.32em] uppercase text-sky-dark mb-3">
                     0{i + 1}
                   </p>
-                  <h2 className="font-serif text-3xl font-semibold text-forest">
+                  <h2 className="text-3xl font-extralight text-aubergine tracking-tight">
                     {event.title}
                   </h2>
                 </div>
                 <div className="md:col-span-3">
-                  <p className="text-warm-gray leading-relaxed mb-5">
+                  <p className="text-warm-gray leading-relaxed mb-5 font-light">
                     {event.description}
                   </p>
-                  <p className="text-sm text-tan font-medium italic">
+                  <p className="text-sm text-rose font-light italic">
                     {event.note}
                   </p>
                 </div>
@@ -104,19 +109,24 @@ export default function ExperiencePage() {
 
       {/* CTA */}
       <section
-        className="py-20"
-        style={{ background: "linear-gradient(135deg, #1B302A 0%, #2C4A3E 100%)" }}
+        className="py-24 relative overflow-hidden"
+        style={{ background: "linear-gradient(135deg, #1F1018 0%, #361D29 55%, #745A67 100%)" }}
       >
-        <div className="max-w-3xl mx-auto px-6 lg:px-10 text-center">
-          <h2 className="font-serif text-4xl font-semibold text-cream mb-5">
-            Not Sure Which Fits Your Event?
+        <div
+          className="absolute -top-1/3 -right-1/4 w-[60%] h-[120%] pointer-events-none"
+          style={{ background: "radial-gradient(ellipse at center, #9AB1C840 0%, transparent 65%)" }}
+        />
+        <div className="relative max-w-3xl mx-auto px-6 lg:px-10 text-center">
+          <h2 className="text-4xl lg:text-5xl font-extralight text-shell mb-5 tracking-tight leading-tight">
+            Not sure which fits{" "}
+            <span className="font-script text-coral text-5xl lg:text-6xl">your event?</span>
           </h2>
-          <p className="text-cream/60 leading-relaxed mb-10">
+          <p className="text-shell/65 leading-relaxed mb-10 font-light">
             Every inquiry starts a conversation. Tell us about your gathering
             and we&apos;ll build something just right.
           </p>
           <Link href={INQUIRY_URL}
-            className="inline-flex items-center px-8 py-4 bg-cream text-forest text-sm font-semibold rounded-full hover:bg-tan-light transition-all duration-300 tracking-wide"
+            className="inline-flex items-center px-9 py-4 bg-shell text-aubergine text-[11px] font-medium uppercase rounded-full hover:bg-sky-light transition-all duration-300 tracking-[0.2em] shadow-lg"
           >
             Submit an Inquiry
           </Link>

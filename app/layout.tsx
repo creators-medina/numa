@@ -4,22 +4,22 @@ import ClientLayoutWrapper from "@/components/ClientLayoutWrapper";
 
 export const metadata: Metadata = {
   title: {
-    default: "NÜMA Açaí — Premium Event Catering",
-    template: "%s | NÜMA Açaí",
+    default: "nüma açaí — Premium Event Catering",
+    template: "%s | nüma açaí",
   },
   description:
-    "NÜMA Açaí brings a beautiful, premium açaí pop-up experience to weddings, bridal showers, private parties, corporate events, and more. Custom quoted for every gathering.",
+    "nüma açaí brings a beautiful, premium açaí pop-up experience to weddings, bridal showers, private parties, corporate events, and more. Custom quoted for every gathering.",
   keywords: [
     "açaí catering",
     "event catering",
     "wedding catering",
     "açaí pop-up",
     "bridal shower catering",
-    "NÜMA Açaí",
+    "nüma açaí",
     "boutique catering",
   ],
   openGraph: {
-    title: "NÜMA Açaí — Premium Event Catering",
+    title: "nüma açaí — Premium Event Catering",
     description:
       "A beautiful, premium açaí pop-up experience tailored for your special event.",
     type: "website",
@@ -34,7 +34,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col bg-cream text-charcoal antialiased">
+      <body className="min-h-screen flex flex-col bg-shell text-charcoal antialiased">
         <ClientLayoutWrapper>{children}</ClientLayoutWrapper>
       </body>
     </html>
