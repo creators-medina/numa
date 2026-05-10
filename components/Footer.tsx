@@ -18,9 +18,9 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <Image src="/logo.svg" alt="NÜMA Açaí" width={48} height={27} className="h-10 w-auto brightness-0 invert opacity-80" />
+              <Image src="/logo.svg" alt="Nüma Açaí" width={48} height={27} className="h-10 w-auto brightness-0 invert opacity-80" />
               <p className="font-serif text-xl font-semibold tracking-widest text-cream uppercase">
-                NÜMA Açaí
+                Nüma Açaí
               </p>
             </div>
             <p className="text-sm leading-relaxed text-cream/60 max-w-xs">
@@ -59,11 +59,17 @@ export default function Footer() {
                 </svg>
                 @numa.acai
               </a>
-              <a href="mailto:hello@numaacai.com" className="flex items-center gap-3 text-sm text-cream/70 hover:text-cream transition-colors">
+              <a href="mailto:numa.acai@gmail.com" className="flex items-center gap-3 text-sm text-cream/70 hover:text-cream transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
                 </svg>
-                hello@numaacai.com
+                numa.acai@gmail.com
+              </a>
+              <a href="tel:+15624418540" className="flex items-center gap-3 text-sm text-cream/70 hover:text-cream transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.37 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0122 16.92z"/>
+                </svg>
+                (562) 441-8540
               </a>
               <Link
                 href="/inquiry"
@@ -76,7 +82,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-cream/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-cream/30">© {new Date().getFullYear()} NÜMA Açaí. All rights reserved.</p>
+          <p className="text-xs text-cream/30">© {new Date().getFullYear()} Nüma Açaí. All rights reserved.</p>
           <p className="text-xs text-cream/30 italic font-serif">Crafted with care, served with love.</p>
         </div>
       </div>

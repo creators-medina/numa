@@ -4,7 +4,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Gallery",
   description:
-    "See the NÜMA Açaí experience — bowl presentations, event setups, signage, and guest moments from real events.",
+    "See the Nüma Açaí experience — bowl presentations, event setups, signage, and guest moments from real events.",
 };
 
 const galleryItems = [
@@ -44,7 +44,7 @@ export default function GalleryPage() {
             A Feast for the Eyes
           </h1>
           <p className="text-lg text-warm-gray leading-relaxed max-w-xl mx-auto">
-            Every NÜMA setup is styled as intentionally as the bowls themselves.
+            Every Nüma setup is styled as intentionally as the bowls themselves.
             Explore the experience through imagery.
           </p>
         </div>

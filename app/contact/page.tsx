@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with NÜMA Açaí. Reach us through our inquiry form or find us on Instagram.",
+    "Get in touch with Nüma Açaí. Reach us through our inquiry form or find us on Instagram.",
 };
 
 const INQUIRY_URL = "/inquiry";
@@ -63,7 +63,7 @@ export default function ContactPage() {
                   Event Inquiries
                 </p>
                 <p className="text-cream/60 text-sm leading-relaxed">
-                  Ready to bring NÜMA to your event? Fill out our intake form
+                  Ready to bring Nüma to your event? Fill out our intake form
                   and we&apos;ll reach back out with a custom proposal.
                 </p>
               </div>
@@ -127,18 +127,30 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* Email note */}
-          <div className="mt-8 p-6 rounded-2xl bg-cream-dark/40 border border-cream-dark text-center">
-            <p className="text-sm text-warm-gray">
-              <span className="font-medium text-charcoal">Prefer email?</span>{" "}
-              Reach us at{" "}
+          {/* Email + Phone */}
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="p-6 rounded-2xl bg-cream-dark/40 border border-cream-dark text-center">
+              <p className="text-xs font-semibold tracking-[0.2em] uppercase text-tan mb-2">
+                Email
+              </p>
               <a
-                href="mailto:hello@numaacai.com"
-                className="text-forest hover:text-forest-light transition-colors underline underline-offset-2"
+                href="mailto:numa.acai@gmail.com"
+                className="text-forest hover:text-forest-light transition-colors text-sm font-medium"
               >
-                hello@numaacai.com
+                numa.acai@gmail.com
               </a>
-            </p>
+            </div>
+            <div className="p-6 rounded-2xl bg-cream-dark/40 border border-cream-dark text-center">
+              <p className="text-xs font-semibold tracking-[0.2em] uppercase text-tan mb-2">
+                Phone
+              </p>
+              <a
+                href="tel:+15624418540"
+                className="text-forest hover:text-forest-light transition-colors text-sm font-medium"
+              >
+                (562) 441-8540
+              </a>
+            </div>
           </div>
 
           {/* Response time */}
@@ -147,7 +159,7 @@ export default function ContactPage() {
               Response Time
             </p>
             <p className="font-serif text-2xl font-medium text-forest">
-              We typically respond within 24–48 hours.
+              We typically respond within 1–2 days.
             </p>
             <p className="text-warm-gray text-sm mt-3 max-w-md mx-auto leading-relaxed">
               We review every inquiry personally and will follow up with care.

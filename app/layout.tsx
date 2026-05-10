@@ -4,22 +4,22 @@ import ClientLayoutWrapper from "@/components/ClientLayoutWrapper";
 
 export const metadata: Metadata = {
   title: {
-    default: "NÜMA Açaí — Premium Event Catering",
-    template: "%s | NÜMA Açaí",
+    default: "Nüma Açaí — Premium Event Catering",
+    template: "%s | Nüma Açaí",
   },
   description:
-    "NÜMA Açaí brings a beautiful, premium açaí pop-up experience to weddings, bridal showers, private parties, corporate events, and more. Custom quoted for every gathering.",
+    "Nüma Açaí brings a beautiful, premium açaí pop-up experience to weddings, bridal showers, private parties, corporate events, and more. Custom quoted for every gathering.",
   keywords: [
     "açaí catering",
     "event catering",
     "wedding catering",
     "açaí pop-up",
     "bridal shower catering",
-    "NÜMA Açaí",
+    "Nüma Açaí",
     "boutique catering",
   ],
   openGraph: {
-    title: "NÜMA Açaí — Premium Event Catering",
+    title: "Nüma Açaí — Premium Event Catering",
     description:
       "A beautiful, premium açaí pop-up experience tailored for your special event.",
     type: "website",

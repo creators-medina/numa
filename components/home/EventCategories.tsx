@@ -22,7 +22,7 @@ export default function EventCategories() {
             For Every Kind of Gathering
           </h2>
           <p className="mt-5 text-warm-gray text-lg max-w-xl mx-auto leading-relaxed">
-            Whether intimate or grand, NÜMA is designed to complement the
+            Whether intimate or grand, Nüma is designed to complement the
             beauty of your occasion.
           </p>
         </div>

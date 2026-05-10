@@ -13,15 +13,15 @@ const pillars = [
   },
   {
     title: "Customized to Your Event",
-    body: "From signage to setup style, we tailor the NÜMA experience to complement your venue, theme, and vision.",
+    body: "From signage to setup style, we tailor the Nüma experience to complement your venue, theme, and vision.",
   },
   {
     title: "Memorable Guest Moments",
-    body: "A NÜMA station becomes a natural gathering point — a beautiful, interactive experience your guests will talk about.",
+    body: "A Nüma station becomes a natural gathering point — a beautiful, interactive experience your guests will talk about.",
   },
   {
     title: "Premium, Elevated Feel",
-    body: "This isn't a catering afterthought. NÜMA is a statement piece — polished, intentional, and unforgettable.",
+    body: "This isn't a catering afterthought. Nüma is a statement piece — polished, intentional, and unforgettable.",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function TheExperience() {
             What Sets Us Apart
           </p>
           <h2 className="font-serif text-4xl lg:text-5xl font-semibold text-forest leading-tight">
-            The NÜMA Experience
+            The Nüma Experience
           </h2>
           <p className="mt-5 text-warm-gray text-lg leading-relaxed">
             Every detail — from the first bowl to the final spoonful — is crafted

@@ -20,11 +20,11 @@ export default function CTABand() {
           Let&apos;s Make It Happen
         </p>
         <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-cream leading-tight mb-6">
-          Ready to Bring NÜMA{" "}
+          Ready to Bring Nüma{" "}
           <span className="italic font-normal text-tan">to Your Event?</span>
         </h2>
         <p className="text-cream/60 text-lg leading-relaxed max-w-2xl mx-auto mb-12">
-          Every event is unique — and so is every NÜMA experience. Reach out and
+          Every event is unique — and so is every Nüma experience. Reach out and
           let us create something beautiful together.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

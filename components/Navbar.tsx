@@ -34,14 +34,14 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-3 shrink-0">
             <Image
               src="/logo.svg"
-              alt="NÜMA Açaí"
+              alt="Nüma Açaí"
               width={48}
               height={27}
               className="h-7 w-auto"
               priority
             />
             <span className="hidden sm:block font-serif text-sm font-semibold tracking-[0.18em] text-forest uppercase">
-              NÜMA Açaí
+              Nüma Açaí
             </span>
           </Link>
 

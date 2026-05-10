@@ -5,27 +5,27 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn the story behind NÜMA Açaí — a boutique event catering brand built on a love for beautiful food, warm hospitality, and memorable gatherings.",
+    "Learn the story behind Nüma Açaí — a boutique event catering brand built on a love for beautiful food, warm hospitality, and memorable gatherings.",
 };
 
 const INQUIRY_URL = "/inquiry";
 
 const values = [
   {
-    title: "Quality First",
-    body: "We use only premium açaí and the finest, freshest toppings. Every ingredient is chosen with intention, because your guests deserve the real thing.",
+    title: "Authentic Flavor",
+    body: "Our açaí base is crafted to taste the way açaí is meant to taste — fresh, vibrant, and true to its Brazilian roots. You won't find a better one out there.",
   },
   {
-    title: "Beauty in Every Detail",
-    body: "From the stall setup to the final garnish, every element is considered. We believe food can be as beautiful as it is delicious.",
+    title: "Quality Ingredients",
+    body: "Every bowl is made with premium açaí and the freshest toppings. No shortcuts, no fillers — just real ingredients you can taste.",
   },
   {
-    title: "Your Event, Your Story",
-    body: "We listen deeply to each client. Every NÜMA experience is shaped around what makes your gathering unique — no templates, no shortcuts.",
+    title: "Genuine Connection",
+    body: "Born from a love of bringing people together, Nüma is about the moments shared over a beautiful bowl, not just the food itself.",
   },
   {
-    title: "Warmth & Care",
-    body: "Our team shows up not just to serve food, but to be a positive, gracious presence at your event. Hospitality matters to us.",
+    title: "Made with Love",
+    body: "Every event is treated with the same care and intention as the very first one. We pour heart into every detail.",
   },
 ];
 
@@ -42,8 +42,8 @@ export default function AboutPage() {
             Our Story
           </p>
           <h1 className="font-serif text-5xl lg:text-6xl font-semibold text-forest leading-tight mb-6">
-            Made with Love,{" "}
-            <span className="italic font-normal text-berry">Served with Intention</span>
+            From California Roots,{" "}
+            <span className="italic font-normal text-berry">Brought to Texas</span>
           </h1>
         </div>
       </section>
@@ -55,27 +55,28 @@ export default function AboutPage() {
             {/* Text */}
             <div className="space-y-6">
               <p className="text-warm-gray leading-relaxed text-lg">
-                NÜMA Açaí was born from a simple belief: that the food at a
-                special event should feel as special as the occasion itself.
+                Nüma Açaí was born from a simple longing — for the rich,
+                authentic Brazilian-style açaí our founder grew up loving in
+                California.
               </p>
               <p className="text-warm-gray leading-relaxed">
-                Too often, catering is an afterthought — a checkbox, not an
-                experience. We wanted to change that. We wanted to bring
-                something beautiful, nourishing, and genuinely delightful to
-                the people gathered around you on your most meaningful days.
+                After moving to Texas, Juli Prieto searched for an açaí bowl
+                that felt the way it was supposed to: fresh, full-flavored, and
+                genuinely Brazilian. She couldn&apos;t find one. So in 2025, she
+                started Nüma to bring that same love and taste to the
+                Dallas–Fort Worth community.
               </p>
               <p className="text-warm-gray leading-relaxed">
-                Açaí was the obvious choice. It&apos;s vibrant, fresh, endlessly
-                customizable, and it photographs beautifully. More than that —
-                it creates a moment. A NÜMA station naturally draws people in,
-                sparks conversation, and becomes one of those little joys guests
-                remember long after the event is over.
+                Every bowl is made with quality ingredients, and our base is
+                something you truly won&apos;t find anywhere else. Açaí, when
+                it&apos;s done right, is more than a snack — it&apos;s vibrant,
+                nourishing, and a moment of joy.
               </p>
               <p className="text-warm-gray leading-relaxed">
-                Every event we do is built from scratch — no rigid packages, no
-                one-size-fits-all menus. We sit with each client, understand
-                what they&apos;re building, and create a NÜMA experience that feels
-                like it was made just for them. Because it was.
+                Today, Nüma brings that experience directly to weddings,
+                showers, corporate events, and gatherings across DFW —
+                styled beautifully, served warmly, and crafted to give your
+                guests a taste of something genuinely special.
               </p>
             </div>
 
@@ -84,7 +85,7 @@ export default function AboutPage() {
               <div className="w-full aspect-[4/5] rounded-3xl overflow-hidden">
                 <Image
                   src="/9R5A0251.jpg"
-                  alt="Garnishing a NÜMA açaí bowl"
+                  alt="Garnishing a Nüma açaí bowl"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
@@ -101,6 +102,28 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Founder */}
+      <section className="py-20 bg-cream border-t border-cream-dark">
+        <div className="max-w-4xl mx-auto px-6 lg:px-10">
+          <div className="text-center mb-10">
+            <p className="text-xs font-semibold tracking-[0.25em] uppercase text-tan mb-4">
+              Meet the Founder
+            </p>
+            <h2 className="font-serif text-4xl font-semibold text-forest">
+              Juli Prieto
+            </h2>
+          </div>
+          <p className="text-warm-gray leading-relaxed text-center max-w-2xl mx-auto">
+            Born in Argentina and inspired by cultures around the world, Juli
+            is passionate about languages, connection, and bringing people
+            together. She founded Nüma to share her love for fresh, nourishing
+            foods and her deep appreciation for açaí. One of her favorite
+            things is introducing people to their first truly great açaí bowl
+            — and watching them enjoy it.
+          </p>
         </div>
       </section>
 

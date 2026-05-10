@@ -72,7 +72,7 @@ export default function InquiryForm() {
           </h3>
           <p className="text-warm-gray leading-relaxed max-w-sm">
             Thank you for reaching out. We&apos;ll review your details and get back to
-            you personally within 24–48 hours.
+            you personally within 1–2 days.
           </p>
         </div>
         <a
@@ -252,7 +252,7 @@ export default function InquiryForm() {
       </button>
 
       <p className="text-center text-xs text-warm-gray-light">
-        We respond to all inquiries personally within 24–48 hours.
+        We respond to all inquiries personally within 1–2 days.
       </p>
     </form>
   );

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "NÜMA Admin — CRM Pipeline",
-  description: "Internal CRM pipeline for NÜMA Açaí",
+  title: "Nüma Admin — CRM Pipeline",
+  description: "Internal CRM pipeline for Nüma Açaí",
   robots: { index: false, follow: false },
 };
 

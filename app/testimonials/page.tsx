@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Testimonials",
   description:
-    "Hear from hosts and guests who have experienced NÜMA Açaí at their weddings, showers, corporate events, and private celebrations.",
+    "Hear from hosts and guests who have experienced Nüma Açaí at their weddings, showers, corporate events, and private celebrations.",
 };
 
 const INQUIRY_URL = "/inquiry";
@@ -12,45 +12,10 @@ const INQUIRY_URL = "/inquiry";
 const testimonials = [
   {
     quote:
-      "NÜMA was the highlight of our bridal shower. The setup was absolutely stunning — it looked like something straight out of a magazine. Every single guest kept talking about the bowls. It felt so elevated and intentional, and made our whole event feel even more special.",
-    author: "Sofia R.",
-    event: "Bridal Shower",
-    location: "Los Angeles, CA",
-  },
-  {
-    quote:
-      "We hired NÜMA for our corporate wellness day and they completely exceeded our expectations. The setup was professional and beautiful, the team was warm and efficient, and the açaí was genuinely the best I've ever had. Our team is still talking about it weeks later.",
-    author: "Priya M.",
-    event: "Corporate Wellness Event",
-    location: "Santa Monica, CA",
-  },
-  {
-    quote:
-      "From the very first message to the final bowl, working with NÜMA was effortless. They made our wedding feel even more special. Our guests lined up again and again. We can't recommend them enough.",
-    author: "Camille & Jordan T.",
-    event: "Wedding Reception",
-    location: "Malibu, CA",
-  },
-  {
-    quote:
-      "We wanted something different for our daughter's baby shower — something that would feel fresh, beautiful, and memorable. NÜMA delivered all of that and more. The table looked gorgeous and the açaí was absolutely delicious.",
-    author: "Diane L.",
-    event: "Baby Shower",
-    location: "Beverly Hills, CA",
-  },
-  {
-    quote:
-      "I booked NÜMA for a private birthday dinner party and I am so glad I did. The setup was beautiful, completely in line with our aesthetic, and the team was lovely. My guests were obsessed. I'm already planning to book them again.",
-    author: "Natalie V.",
-    event: "Private Birthday Celebration",
-    location: "West Hollywood, CA",
-  },
-  {
-    quote:
-      "NÜMA was a perfect addition to our brand activation event. The station was visually stunning — it became the most photographed corner of the entire event. Premium, professional, and genuinely delicious.",
-    author: "Marcus A.",
-    event: "Brand Activation",
-    location: "Culver City, CA",
+      "I tried Nüma Açaí for the very first time last week, and honestly, it was one of the most refreshing things I've ever tasted. Having never had açaí before, I really didn't know what to expect, but my daughter loves it, so I thought, \"Why not give it a try?\" It ended up being one of the best treats I've had in a long time — so much so that while they were serving at the conference, I wanted it for every meal of the day. The ingredients were incredibly fresh, and you could immediately tell they were high quality. The care and attention that goes into each bowl truly makes Nüma Açaí one of my favorite summer treats. Fresh, flavorful, light, and incredibly satisfying. Highly recommend!",
+    author: "Jen H.",
+    event: "PLC Conference",
+    location: "Dallas, TX",
   },
 ];
 
@@ -78,8 +43,8 @@ export default function TestimonialsPage() {
 
       {/* Testimonials */}
       <section className="py-20 bg-cream">
-        <div className="max-w-6xl mx-auto px-6 lg:px-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="max-w-5xl mx-auto px-6 lg:px-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {testimonials.map((t, i) => (
               <div
                 key={i}
@@ -102,7 +67,33 @@ export default function TestimonialsPage() {
                 </div>
               </div>
             ))}
+
+            {/* Wedding placeholder — quote pending */}
+            <div className="bg-cream rounded-2xl p-8 flex flex-col gap-6 border border-cream-dark hover:border-tan-light hover:shadow-md transition-all duration-300">
+              <div className="text-tan text-3xl font-serif leading-none">&ldquo;</div>
+              <p className="text-warm-gray text-sm leading-relaxed italic flex-1">
+                A beautiful day, a beautiful bowl. Full review coming soon — we
+                were honored to be part of N. &amp; M.&apos;s wedding day.
+              </p>
+              <div className="border-t border-cream-dark pt-5">
+                <p className="font-serif text-base font-semibold text-forest">
+                  N. &amp; M.
+                </p>
+                <p className="text-xs text-warm-gray tracking-wide mt-1">
+                  Wedding
+                </p>
+                <p className="text-xs text-warm-gray-light mt-0.5">
+                  Dallas, TX
+                </p>
+              </div>
+            </div>
           </div>
+
+          {/* Soft note */}
+          <p className="text-center text-sm text-warm-gray-light mt-12 max-w-md mx-auto leading-relaxed">
+            More stories on the way as we collect kind words from recent
+            weddings, conferences, and private events.
+          </p>
         </div>
       </section>
 
@@ -116,7 +107,7 @@ export default function TestimonialsPage() {
             Your Event Could Be Next
           </h2>
           <p className="text-cream/60 leading-relaxed mb-10 max-w-xl mx-auto">
-            Join the growing list of gatherings where NÜMA turned a great event
+            Join the growing list of gatherings where Nüma turned a great event
             into an unforgettable one.
           </p>
           <Link href={INQUIRY_URL}

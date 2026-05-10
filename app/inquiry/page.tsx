@@ -4,7 +4,7 @@ import InquiryForm from "@/components/inquiry/InquiryForm";
 export const metadata: Metadata = {
   title: "Inquire to Book",
   description:
-    "Submit an inquiry for NÜMA Açaí at your event. Every experience is custom quoted based on your guest count, location, event type, and service needs.",
+    "Submit an inquiry for Nüma Açaí at your event. Every experience is custom quoted based on your guest count, location, event type, and service needs.",
 };
 
 const pricingFactors = [
@@ -32,7 +32,7 @@ export default function InquiryPage() {
             Inquire to Book
           </h1>
           <p className="text-lg text-warm-gray leading-relaxed max-w-2xl mx-auto">
-            Every NÜMA event is custom. Tell us about your gathering and
+            Every Nüma event is custom. Tell us about your gathering and
             we&apos;ll craft a proposal designed just for you.
           </p>
         </div>
@@ -65,15 +65,30 @@ export default function InquiryPage() {
                 </ul>
               </div>
 
-              <div className="p-6 rounded-2xl border border-tan-light/40 bg-tan-light/10">
-                <p className="font-serif text-base font-semibold text-forest mb-2">
-                  When to Inquire
-                </p>
-                <p className="text-warm-gray text-sm leading-relaxed">
-                  As early as possible — popular dates fill quickly, especially
-                  for weddings and large events. We&apos;ll personally review every
-                  submission and follow up within 24–48 hours.
-                </p>
+              <div className="p-6 rounded-2xl border border-tan-light/40 bg-tan-light/10 space-y-4">
+                <div>
+                  <p className="font-serif text-base font-semibold text-forest mb-2">
+                    Good to Know
+                  </p>
+                  <ul className="space-y-2 text-sm text-warm-gray leading-relaxed">
+                    <li className="flex items-start gap-3">
+                      <span className="text-tan mt-0.5 shrink-0">◦</span>
+                      <span>We recommend booking <span className="font-medium text-forest">at least 3 weeks ahead</span> — popular dates fill up quickly.</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-tan mt-0.5 shrink-0">◦</span>
+                      <span>A <span className="font-medium text-forest">$200 deposit</span> reserves your date.</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-tan mt-0.5 shrink-0">◦</span>
+                      <span>We serve the <span className="font-medium text-forest">DFW area</span>; events outside DFW are quoted individually.</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-tan mt-0.5 shrink-0">◦</span>
+                      <span>Every inquiry is personally reviewed — we&apos;ll follow up within <span className="font-medium text-forest">1–2 days</span>.</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
 
               <div className="flex items-center gap-4 pt-2">

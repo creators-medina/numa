@@ -46,7 +46,7 @@ export default function Hero() {
 
         {/* Subheadline */}
         <p className="text-lg sm:text-xl text-warm-gray leading-relaxed max-w-2xl mx-auto mb-12">
-          NÜMA brings a beautifully curated açaí pop-up directly to your event —
+          Nüma brings a beautifully curated açaí pop-up directly to your event —
           weddings, showers, private parties, brand activations, and beyond.
           Fresh, premium, and designed around your moment.
         </p>

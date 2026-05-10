@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "The Experience",
   description:
-    "From intimate bridal showers to large corporate gatherings, NÜMA creates a custom açaí pop-up experience tailored to your event.",
+    "From intimate bridal showers to large corporate gatherings, Nüma creates a custom açaí pop-up experience tailored to your event.",
 };
 
 const INQUIRY_URL = "/inquiry";
@@ -13,37 +13,37 @@ const eventTypes = [
   {
     title: "Weddings",
     description:
-      "Your wedding day deserves every detail to feel exceptional. NÜMA sets up an elegant açaí station that becomes a beautiful, organic gathering point for your guests — styled to complement your venue and aesthetic. Imagine a gorgeously dressed stall, fresh bowls assembled to order, and a moment of genuine delight woven into your reception.",
+      "Your wedding day deserves every detail to feel exceptional. Nüma sets up an elegant açaí station that becomes a beautiful, organic gathering point for your guests — styled to complement your venue and aesthetic. Imagine a gorgeously dressed stall, fresh bowls assembled to order, and a moment of genuine delight woven into your reception.",
     note: "Custom quoted based on guest count, venue, and service duration.",
   },
   {
     title: "Bridal & Baby Showers",
     description:
-      "Intimate, beautiful, and utterly memorable — a NÜMA station elevates any shower into something guests talk about long after. We design the setup to match your color palette and theme, creating a centerpiece experience that photographs beautifully and tastes even better.",
+      "Intimate, beautiful, and utterly memorable — a Nüma station elevates any shower into something guests talk about long after. We design the setup to match your color palette and theme, creating a centerpiece experience that photographs beautifully and tastes even better.",
     note: "Custom quoted based on guest count, location, and duration.",
   },
   {
     title: "Private Celebrations",
     description:
-      "Birthdays, anniversaries, milestone dinners — whatever you're marking, NÜMA brings a refined, fresh energy that sets your gathering apart. Our team handles everything so you can be fully present with the people who matter.",
+      "Birthdays, anniversaries, milestone dinners — whatever you're marking, Nüma brings a refined, fresh energy that sets your gathering apart. Our team handles everything so you can be fully present with the people who matter.",
     note: "Custom quoted based on the scale and style of your event.",
   },
   {
     title: "Corporate Events",
     description:
-      "A NÜMA açaí bar is a statement. For team offsites, launch events, client experiences, and wellness days, we deliver a polished, premium food experience that leaves a lasting impression. Professional, seamless, and elevated.",
+      "A Nüma açaí bar is a statement. For team offsites, launch events, client experiences, and wellness days, we deliver a polished, premium food experience that leaves a lasting impression. Professional, seamless, and elevated.",
     note: "Custom quoted based on headcount, venue, and service needs.",
   },
   {
     title: "Wellness & Community Events",
     description:
-      "Retreats, yoga events, wellness fairs, and community gatherings — açaí is the perfect fit. Nourishing, fresh, and vibrant, NÜMA brings a station that aligns naturally with a wellness-oriented audience and aesthetic.",
+      "Retreats, yoga events, wellness fairs, and community gatherings — açaí is the perfect fit. Nourishing, fresh, and vibrant, Nüma brings a station that aligns naturally with a wellness-oriented audience and aesthetic.",
     note: "Custom quoted based on event format and expected attendance.",
   },
   {
     title: "Brand Activations",
     description:
-      "Looking for a food experience that becomes content? NÜMA pop-ups are visually stunning by design — your guests will photograph everything. Whether it's a product launch, influencer event, or brand moment, we make it feel premium and on-brand.",
+      "Looking for a food experience that becomes content? Nüma pop-ups are visually stunning by design — your guests will photograph everything. Whether it's a product launch, influencer event, or brand moment, we make it feel premium and on-brand.",
     note: "Custom quoted based on brand requirements and event scope.",
   },
 ];
@@ -61,11 +61,11 @@ export default function ExperiencePage() {
             Tailored to You
           </p>
           <h1 className="font-serif text-5xl lg:text-6xl font-semibold text-forest leading-tight mb-6">
-            The NÜMA Experience
+            The Nüma Experience
           </h1>
           <p className="text-lg text-warm-gray leading-relaxed max-w-2xl mx-auto">
             We don&apos;t believe in rigid menus or one-size-fits-all packages.
-            Every NÜMA event is designed from the ground up — tailored to your
+            Every Nüma event is designed from the ground up — tailored to your
             gathering, your guests, and your vision.
           </p>
         </div>

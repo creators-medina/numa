@@ -12,7 +12,7 @@ const steps = [
   },
   {
     number: "03",
-    title: "NÜMA Comes to You",
+    title: "Nüma Comes to You",
     body: "On the day of your event, our team arrives, sets up beautifully, serves every guest with care, and handles everything — start to finish.",
   },
 ];
@@ -32,7 +32,7 @@ export default function HowItWorks() {
             How It Works
           </h2>
           <p className="mt-5 text-warm-gray text-lg max-w-xl mx-auto leading-relaxed">
-            Getting NÜMA at your event is effortless. Here&apos;s what to expect.
+            Getting Nüma at your event is effortless. Here&apos;s what to expect.
           </p>
         </div>
 

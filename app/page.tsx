@@ -8,9 +8,9 @@ import HowItWorks from "@/components/home/HowItWorks";
 import CTABand from "@/components/home/CTABand";
 
 export const metadata: Metadata = {
-  title: "NÜMA Açaí — Premium Açaí Event Catering",
+  title: "Nüma Açaí — Premium Açaí Event Catering",
   description:
-    "NÜMA Açaí brings a premium, on-site açaí pop-up to your wedding, bridal shower, corporate event, or private celebration. Custom quoted for every gathering.",
+    "Nüma Açaí brings a premium, on-site açaí pop-up to your wedding, bridal shower, corporate event, or private celebration. Custom quoted for every gathering.",
 };
 
 export default function HomePage() {
