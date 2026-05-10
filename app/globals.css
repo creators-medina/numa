@@ -1,49 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Caveat:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap');
 @import "tailwindcss";
 
 @theme {
-  /* ── Brand Kit Palette ──
-     9AB1C8 dusty blue · 485A47 olive · F1F0EB off-white · EFE5D4 sand
-     7B4E4D rose · 745A67 plum · FE5D5B coral · 361D29 aubergine
-     8C8F8E gray · 2D2D2D charcoal
-  */
+  /* Brand Colors */
+  --color-cream: #FAF7F2;
+  --color-cream-dark: #F0EAE0;
+  --color-forest: #2C4A3E;
+  --color-forest-light: #3D6355;
+  --color-forest-dark: #1B302A;
+  --color-berry: #7C3D4E;
+  --color-berry-light: #9C5468;
+  --color-tan: #C9A87C;
+  --color-tan-light: #E2CBA8;
+  --color-sage: #8FAF97;
+  --color-charcoal: #2A2A2A;
+  --color-warm-gray: #6B6560;
+  --color-warm-gray-light: #A8A39E;
 
-  /* Brand-named tokens (new) */
-  --color-sky: #9AB1C8;
-  --color-sky-light: #C8D3DD;
-  --color-sky-dark: #7A93AC;
-  --color-olive: #485A47;
-  --color-aubergine: #361D29;
-  --color-aubergine-deep: #1F1018;
-  --color-rose: #7B4E4D;
-  --color-plum: #745A67;
-  --color-coral: #FE5D5B;
-  --color-coral-soft: #FF8583;
-  --color-sand: #EFE5D4;
-  --color-shell: #F1F0EB;
-
-  /* Legacy token aliases — remapped to brand kit so existing classes
-     across the codebase pick up the new palette automatically. */
-  --color-cream: #F1F0EB;        /* shell */
-  --color-cream-dark: #EFE5D4;   /* sand */
-  --color-forest: #361D29;       /* aubergine (primary dark) */
-  --color-forest-light: #485A47; /* olive */
-  --color-forest-dark: #1F1018;  /* deep aubergine */
-  --color-berry: #7B4E4D;        /* rose */
-  --color-berry-light: #745A67;  /* plum */
-  --color-tan: #9AB1C8;          /* dusty blue (signature accent) */
-  --color-tan-light: #C8D3DD;    /* light dusty blue */
-  --color-sage: #9AB1C8;         /* dusty blue */
-  --color-charcoal: #2D2D2D;
-  --color-warm-gray: #8C8F8E;
-  --color-warm-gray-light: #B5B7B6;
-
-  /* Typography — brand kit: Gotham Thin / Gotham Book / Adobe Handwriting Ernie.
-     Montserrat is the closest free Gotham analogue; Caveat replaces the script. */
-  --font-display: 'Montserrat', system-ui, sans-serif;
-  --font-sans: 'Montserrat', system-ui, sans-serif;
-  --font-serif: 'Montserrat', system-ui, sans-serif;
-  --font-script: 'Caveat', 'Brush Script MT', cursive;
+  /* Typography */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'DM Sans', system-ui, sans-serif;
 }
 
 html {
@@ -51,47 +27,18 @@ html {
 }
 
 body {
-  background-color: #F1F0EB;
-  color: #2D2D2D;
-  font-family: 'Montserrat', system-ui, sans-serif;
-  font-weight: 400;
+  background-color: #FAF7F2;
+  color: #2A2A2A;
+  font-family: 'DM Sans', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Headlines: thin/light geometric sans (Gotham Thin analogue) */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', system-ui, sans-serif;
-  font-weight: 300;
-  letter-spacing: -0.005em;
+h1, h2, h3, h4, h5 {
+  font-family: 'Playfair Display', Georgia, serif;
 }
 
-h1 { font-weight: 200; letter-spacing: -0.01em; }
-h2 { font-weight: 250; }
-
-/* Script utility for accent words (replaces italic-serif emphasis) */
-.font-script {
-  font-family: 'Caveat', 'Brush Script MT', cursive;
-  font-weight: 500;
-  font-style: normal;
-  letter-spacing: 0;
-}
-
-/* Brand wordmark "nüma" — wide-tracked thin sans, lowercase */
-.brand-wordmark {
-  font-family: 'Montserrat', system-ui, sans-serif;
-  font-weight: 200;
-  letter-spacing: 0.18em;
-  text-transform: lowercase;
-}
-
-/* Subtle scrollbar in brand colors */
+/* Subtle scrollbar */
 ::-webkit-scrollbar { width: 5px; }
-::-webkit-scrollbar-track { background: #F1F0EB; }
-::-webkit-scrollbar-thumb { background: #9AB1C8; border-radius: 3px; }
-
-/* Selection highlight */
-::selection {
-  background: #9AB1C8;
-  color: #F1F0EB;
-}
+::-webkit-scrollbar-track { background: #FAF7F2; }
+::-webkit-scrollbar-thumb { background: #C9A87C; border-radius: 3px; }

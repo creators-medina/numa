@@ -11,22 +11,21 @@ const photos = [
 
 export default function GalleryPreview() {
   return (
-    <section className="py-24 bg-shell">
+    <section className="py-24 bg-cream">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
           <div>
-            <p className="text-[11px] font-medium tracking-[0.32em] uppercase text-sky-dark mb-4">
+            <p className="text-xs font-semibold tracking-[0.25em] uppercase text-tan mb-4">
               Gallery
             </p>
-            <h2 className="text-4xl lg:text-5xl font-extralight text-aubergine tracking-tight leading-tight">
-              See the{" "}
-              <span className="font-script text-coral text-5xl lg:text-6xl">difference</span>
+            <h2 className="font-serif text-4xl lg:text-5xl font-semibold text-forest">
+              See the Difference
             </h2>
           </div>
           <Link
             href="/gallery"
-            className="inline-flex items-center gap-2 text-[11px] font-medium uppercase text-aubergine hover:text-coral transition-colors tracking-[0.2em] shrink-0"
+            className="inline-flex items-center gap-2 text-sm font-medium text-forest hover:text-forest-light transition-colors tracking-wide shrink-0"
           >
             View Full Gallery
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
