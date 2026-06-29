@@ -5,7 +5,7 @@ export default function CTABand() {
   return (
     <section
       className="py-24 relative overflow-hidden"
-      style={{ background: "linear-gradient(135deg, #1B302A 0%, #2C4A3E 60%, #3D6355 100%)" }}
+      style={{ background: "linear-gradient(135deg, #361D29 0%, #485A47 60%, #5C715A 100%)" }}
     >
       {/* Decorative overlay */}
       <div

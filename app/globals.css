@@ -2,20 +2,42 @@
 @import "tailwindcss";
 
 @theme {
-  /* Brand Colors */
-  --color-cream: #FAF7F2;
-  --color-cream-dark: #F0EAE0;
-  --color-forest: #2C4A3E;
-  --color-forest-light: #3D6355;
-  --color-forest-dark: #1B302A;
-  --color-berry: #7C3D4E;
-  --color-berry-light: #9C5468;
-  --color-tan: #C9A87C;
-  --color-tan-light: #E2CBA8;
-  --color-sage: #8FAF97;
-  --color-charcoal: #2A2A2A;
-  --color-warm-gray: #6B6560;
-  --color-warm-gray-light: #A8A39E;
+  /* ── Brand Colors (2026 brand kit) ──────────────────────────────
+     Neutrals carry ~90% of the site; olive green is the primary
+     action color; dusty blue is the signature backdrop; coral is the
+     single accent pop; berry tones tie back to açaí.
+     Token names are preserved from the prior palette so existing
+     utility classes (bg-forest, text-tan, …) map onto the new roles. */
+
+  /* Backgrounds / neutrals */
+  --color-cream: #F1F0EB;        /* warm white — default page bg */
+  --color-cream-dark: #EFE5D4;   /* sand — alternating section bands */
+  --color-sand: #EFE5D4;         /* alias */
+
+  /* Primary action — olive green */
+  --color-forest: #485A47;
+  --color-forest-light: #5C715A;
+  --color-forest-dark: #361D29;  /* aubergine — dark sections / footer */
+  --color-aubergine: #361D29;    /* alias */
+
+  /* Berry tones — açaí */
+  --color-berry: #7B4E4D;        /* mauve-brown */
+  --color-berry-light: #745A67;  /* dusty plum */
+  --color-plum: #745A67;         /* alias */
+
+  /* Accent pop — coral (name kept as `tan` for class compatibility) */
+  --color-tan: #FE5D5B;
+  --color-tan-light: #EFE5D4;    /* sand — used as soft hover bg */
+  --color-coral: #FE5D5B;        /* alias */
+
+  /* Signature backdrop — dusty blue (name kept as `sage`) */
+  --color-sage: #9AB1C8;
+  --color-blue: #9AB1C8;         /* alias */
+
+  /* Text / greys */
+  --color-charcoal: #2D2D2D;
+  --color-warm-gray: #8C8F8E;
+  --color-warm-gray-light: #B5B7B6;
 
   /* Typography — Brand kit:
      • Gotham Thin   → Montserrat 200 (headlines)
@@ -31,8 +53,8 @@ html {
 }
 
 body {
-  background-color: #FAF7F2;
-  color: #2A2A2A;
+  background-color: #F1F0EB;
+  color: #2D2D2D;
   font-family: 'Montserrat', system-ui, sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -55,5 +77,5 @@ h1 { font-weight: 200; }
 
 /* Subtle scrollbar */
 ::-webkit-scrollbar { width: 5px; }
-::-webkit-scrollbar-track { background: #FAF7F2; }
-::-webkit-scrollbar-thumb { background: #C9A87C; border-radius: 3px; }
+::-webkit-scrollbar-track { background: #F1F0EB; }
+::-webkit-scrollbar-thumb { background: #745A67; border-radius: 3px; }

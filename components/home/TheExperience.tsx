@@ -29,7 +29,7 @@ export default function TheExperience() {
   return (
     <section
       className="py-24"
-      style={{ background: "linear-gradient(180deg, #F0EAE0 0%, #FAF7F2 100%)" }}
+      style={{ background: "linear-gradient(180deg, #EFE5D4 0%, #F1F0EB 100%)" }}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         {/* Header */}

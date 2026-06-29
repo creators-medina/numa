@@ -54,7 +54,7 @@ export default function ExperiencePage() {
       {/* Hero */}
       <section
         className="pt-36 pb-20 relative"
-        style={{ background: "linear-gradient(160deg, #F0EAE0 0%, #FAF7F2 100%)" }}
+        style={{ background: "linear-gradient(160deg, #EFE5D4 0%, #F1F0EB 100%)" }}
       >
         <div className="max-w-4xl mx-auto px-6 lg:px-10 text-center">
           <p className="text-xs font-semibold tracking-[0.25em] uppercase text-tan mb-5">
@@ -105,7 +105,7 @@ export default function ExperiencePage() {
       {/* CTA */}
       <section
         className="py-20"
-        style={{ background: "linear-gradient(135deg, #1B302A 0%, #2C4A3E 100%)" }}
+        style={{ background: "linear-gradient(135deg, #361D29 0%, #485A47 100%)" }}
       >
         <div className="max-w-3xl mx-auto px-6 lg:px-10 text-center">
           <h2 className="font-serif text-4xl font-semibold text-cream mb-5">

@@ -15,7 +15,7 @@ export default function ContactPage() {
       {/* Hero */}
       <section
         className="pt-36 pb-16"
-        style={{ background: "linear-gradient(160deg, #F0EAE0 0%, #FAF7F2 100%)" }}
+        style={{ background: "linear-gradient(160deg, #EFE5D4 0%, #F1F0EB 100%)" }}
       >
         <div className="max-w-4xl mx-auto px-6 lg:px-10 text-center">
           <p className="text-xs font-semibold tracking-[0.25em] uppercase text-tan mb-5">
@@ -39,7 +39,7 @@ export default function ContactPage() {
             <div
               className="rounded-3xl p-10 flex flex-col gap-6"
               style={{
-                background: "linear-gradient(145deg, #2C4A3E 0%, #1B302A 100%)",
+                background: "linear-gradient(145deg, #485A47 0%, #361D29 100%)",
               }}
             >
               <div className="w-12 h-12 rounded-full bg-cream/10 flex items-center justify-center">

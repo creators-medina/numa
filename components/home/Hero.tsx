@@ -11,7 +11,7 @@ export default function Hero() {
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(160deg, #F0EAE0 0%, #FAF7F2 40%, #E8EDE9 100%)",
+            "linear-gradient(160deg, #EFE5D4 0%, #F1F0EB 38%, #DCE6EE 72%, #9AB1C8 100%)",
         }}
       />
 
@@ -20,14 +20,14 @@ export default function Hero() {
         className="absolute top-0 right-0 w-1/2 h-full opacity-8 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse at 80% 20%, #2C4A3E18 0%, transparent 60%)",
+            "radial-gradient(ellipse at 80% 20%, #485A4718 0%, transparent 60%)",
         }}
       />
       <div
         className="absolute bottom-0 left-0 w-1/3 h-1/2 opacity-8 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse at 20% 80%, #7C3D4E12 0%, transparent 60%)",
+            "radial-gradient(ellipse at 20% 80%, #7B4E4D12 0%, transparent 60%)",
         }}
       />
 

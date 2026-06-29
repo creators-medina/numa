@@ -131,7 +131,7 @@ export default function AddLeadModal({
         {/* Header */}
         <div
           className="flex items-center justify-between px-6 py-4 border-b border-gray-100 rounded-t-2xl"
-          style={{ backgroundColor: "#2C4A3E" }}
+          style={{ backgroundColor: "#485A47" }}
         >
           <h2 className="text-white font-semibold text-lg">Add New Lead</h2>
           <button
@@ -164,7 +164,7 @@ export default function AddLeadModal({
               type="text"
               value={form.full_name}
               onChange={(e) => set("full_name", e.target.value)}
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#2C4A3E]/40"
+              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#485A47]/40"
               placeholder="Jane Smith"
             />
           </div>
@@ -179,7 +179,7 @@ export default function AddLeadModal({
                 type="email"
                 value={form.email}
                 onChange={(e) => set("email", e.target.value)}
-                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#2C4A3E]/40"
+                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#485A47]/40"
                 placeholder="jane@example.com"
               />
             </div>
@@ -191,7 +191,7 @@ export default function AddLeadModal({
                 type="tel"
                 value={form.phone}
                 onChange={(e) => set("phone", e.target.value)}
-                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#2C4A3E]/40"
+                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#485A47]/40"
                 placeholder="(555) 000-0000"
               />
             </div>
@@ -205,7 +205,7 @@ export default function AddLeadModal({
             <select
               value={form.service_type}
               onChange={(e) => set("service_type", e.target.value)}
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#2C4A3E]/40 bg-white"
+              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#485A47]/40 bg-white"
             >
               <option value="">Select service…</option>
               {SERVICE_TYPES.map((s) => (
@@ -226,7 +226,7 @@ export default function AddLeadModal({
                 type="date"
                 value={form.event_date}
                 onChange={(e) => set("event_date", e.target.value)}
-                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#2C4A3E]/40"
+                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#485A47]/40"
               />
             </div>
             <div>
@@ -238,7 +238,7 @@ export default function AddLeadModal({
                 min="1"
                 value={form.guest_count}
                 onChange={(e) => set("guest_count", e.target.value)}
-                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#2C4A3E]/40"
+                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#485A47]/40"
                 placeholder="50"
               />
             </div>
@@ -254,7 +254,7 @@ export default function AddLeadModal({
                 type="text"
                 value={form.city}
                 onChange={(e) => set("city", e.target.value)}
-                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#2C4A3E]/40"
+                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#485A47]/40"
                 placeholder="Miami"
               />
             </div>
@@ -266,7 +266,7 @@ export default function AddLeadModal({
                 type="text"
                 value={form.state}
                 onChange={(e) => set("state", e.target.value)}
-                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#2C4A3E]/40"
+                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#485A47]/40"
                 placeholder="FL"
               />
             </div>
@@ -281,7 +281,7 @@ export default function AddLeadModal({
               type="text"
               value={form.venue}
               onChange={(e) => set("venue", e.target.value)}
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#2C4A3E]/40"
+              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#485A47]/40"
               placeholder="The Grand Ballroom"
             />
           </div>
@@ -294,7 +294,7 @@ export default function AddLeadModal({
             <select
               value={form.pipeline_column_id}
               onChange={(e) => set("pipeline_column_id", e.target.value)}
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#2C4A3E]/40 bg-white"
+              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#485A47]/40 bg-white"
             >
               {columns.map((col) => (
                 <option key={col.id} value={col.id}>
@@ -312,7 +312,7 @@ export default function AddLeadModal({
             <select
               value={form.source}
               onChange={(e) => set("source", e.target.value)}
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#2C4A3E]/40 bg-white"
+              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#485A47]/40 bg-white"
             >
               <option value="">Select source…</option>
               {SOURCES.map((s) => (
@@ -332,7 +332,7 @@ export default function AddLeadModal({
               value={form.notes_text}
               onChange={(e) => set("notes_text", e.target.value)}
               rows={3}
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#2C4A3E]/40 resize-none"
+              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#485A47]/40 resize-none"
               placeholder="Any initial notes…"
             />
           </div>
@@ -355,7 +355,7 @@ export default function AddLeadModal({
             onClick={(e) => handleSubmit(e as unknown as React.FormEvent)}
             disabled={submitting}
             className="px-5 py-2 text-sm font-semibold text-white rounded-lg transition-colors disabled:opacity-50"
-            style={{ backgroundColor: "#2C4A3E" }}
+            style={{ backgroundColor: "#485A47" }}
           >
             {submitting ? "Creating…" : "Create Lead"}
           </button>

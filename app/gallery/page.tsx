@@ -34,7 +34,7 @@ export default function GalleryPage() {
       {/* Hero */}
       <section
         className="pt-36 pb-16"
-        style={{ background: "linear-gradient(160deg, #F0EAE0 0%, #FAF7F2 100%)" }}
+        style={{ background: "linear-gradient(160deg, #EFE5D4 0%, #F1F0EB 100%)" }}
       >
         <div className="max-w-4xl mx-auto px-6 lg:px-10 text-center">
           <p className="text-xs font-semibold tracking-[0.25em] uppercase text-tan mb-5">

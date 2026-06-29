@@ -4,7 +4,7 @@ export default function TestimonialsPreview() {
   return (
     <section
       className="py-24"
-      style={{ background: "linear-gradient(180deg, #FAF7F2 0%, #EEE8E0 100%)" }}
+      style={{ background: "linear-gradient(180deg, #F1F0EB 0%, #EFE5D4 100%)" }}
     >
       <div className="max-w-4xl mx-auto px-6 lg:px-10 text-center">
         {/* Header */}

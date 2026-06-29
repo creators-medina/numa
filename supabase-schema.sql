@@ -56,12 +56,12 @@ insert into public.crm_pipeline_columns (board_id, name, position, color)
 select id, col.name, col.pos, col.color
 from public.crm_boards,
 lateral (values
-  ('New Lead',    0, '#C9A87C'),
-  ('Contacted',   1, '#8FAF97'),
-  ('Qualified',   2, '#2C4A3E'),
-  ('Quote Sent',  3, '#7C3D4E'),
-  ('Follow Up',   4, '#6B6560'),
-  ('Scheduled',   5, '#1B302A')
+  ('New Lead',    0, '#FE5D5B'),  -- coral (newest — pops)
+  ('Contacted',   1, '#9AB1C8'),  -- dusty blue
+  ('Qualified',   2, '#485A47'),  -- olive green
+  ('Quote Sent',  3, '#745A67'),  -- plum
+  ('Follow Up',   4, '#7B4E4D'),  -- mauve-brown
+  ('Scheduled',   5, '#361D29')   -- aubergine (deepest — final)
 ) as col(name, pos, color)
 where public.crm_boards.slug = 'numa-acai'
 on conflict do nothing;
